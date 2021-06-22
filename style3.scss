@@ -1,0 +1,234 @@
+.block_page, body{
+    width: 375px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'shrikland';
+    src: url(fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto_medium';
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'roboto_light';
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'roboto_thin';
+    src: url(fonts/Roboto-Thin.ttf);
+}
+
+h2{
+    font-family: 'roboto_medium';
+}
+
+h3{
+    font-family: 'roboto_thin'
+}
+
+p{
+    font-family: 'roboto_light'; 
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+}
+
+$icones: #707070;
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45px;
+
+
+    .fa-arrow-left{
+        margin-left: 30px;
+        margin-right: 70px;
+        color: #414141;
+    }
+
+    img{
+        width: 160px;
+        height: 30px;
+        padding-top: 5px;
+    }
+
+}
+
+.background{
+    
+    img{
+        width: 375px;
+        height: 252px;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+
+.conteneur1{
+    width: 375px;
+    height: 940px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin: auto;
+    top: 205px;
+    border-radius: 35px 35px 0px 0px;
+    padding-bottom: 130px;
+
+    >a{
+       width: 100%;
+       height: 150px; 
+    }
+
+    a:visited{
+        color: white;
+    }
+
+    .titre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+
+    h1{
+        font-family: 'shrikland';
+        font-size: 26px;
+    }
+
+    .entrees, .plats, .desserts{
+        width: 90%;
+        height: 270px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        > h2{
+            width: 12%;
+            height: 22px;
+            margin: 0px;
+            font-family: 'roboto_thin' ;
+            font-size: 16px;
+            border-bottom: 3px solid #99E2D0;
+        }
+
+        .entree__escargot, .entree__foie, .entree__oeuf, .plats__filet, .plats__parmentier, .plats__turbot, .desserts__PB, .desserts__macaron, .desserts__mousse{
+            height: 65px;
+            background-color: white;
+            border-radius: 15px 15px 15px 15px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 2px 2px 10px #d8d8d8;
+
+            .entree__escargot__titre, .entree__foie__titre, .entree__oeuf__titre, .plats__filet__titre, .plats__parmentier__titre, .plats__turbot__titre, .desserts__PB__titre, .desserts__macaron__titre, .desserts__mousse__titre {
+                width: 90%;
+                height: 22px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'roboto_medium';
+                font-size: 17px;
+            }
+
+            .entree__escargot__st, .entree__foie__st, .entree__oeuf__st, .plats__filet__st, .plats__parmentier__st, .plats__turbot__st, .desserts__PB__st, .desserts__macaron__st, .desserts__mousse__st{
+                width: 90%;
+                height: 22px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                justify-content: space-between; 
+
+                .prix{
+                    font-family: 'roboto_medium';
+                    color: #414141;
+                }
+            }
+
+            h3{
+                font-size: 14px;
+                font-family:'roboto_thin' ;
+                line-height: 0; 
+            }   
+        }
+    }
+
+    .commander{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        .commander__bouton{
+            color: white;
+            font-size: 15px;
+            width: 50%;
+            height: 50px;
+            background: linear-gradient( 180deg, #FF79DA, #9356DC );
+            border-radius: 50px 50px 50px 50px;
+            text-align: center;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+            box-shadow: 5px 5px 15px #adadad;
+            font-family: 'roboto_medium';
+        }
+    }
+}
+
+footer{
+    height: 170px;
+    background-color: #414141;
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 0;
+    position: relative;
+    margin-top: 200px;
+
+    h3{
+        font-size: 16px;
+        font-family: 'roboto_light';
+    }
+
+    .footer__img{
+        padding-bottom: 20px;
+        padding-top: 10px;
+
+        img{
+            width: 120px;
+            height: 20px;
+        }
+    }
+
+    .footer__restaurant__partenaire{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        .fa-utensils{
+            margin-right: 10px;
+        }
+
+        .fa-hands-helping{
+            margin-right: 10px;
+        }
+    }
+}
