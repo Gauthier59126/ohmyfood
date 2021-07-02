@@ -149,6 +149,11 @@ $background-loc: #e0e0e0;
                 border: none;
                 cursor: pointer;
                 box-shadow: 5px 5px 15px #adadad;
+
+                &:hover{
+                    opacity: 0.8;
+                    transition: 0.3s;
+                }
             }
         }
     }       
@@ -318,6 +323,7 @@ $violet: #9356DC;
             align-items: center;
 
             .coeurs{
+                cursor: pointer;
 
                 .coeur1__2{
                     position: relative;
@@ -328,11 +334,11 @@ $violet: #9356DC;
                         top: 3px;
                         position: absolute;
                         background-color: white;
-                        transition: color 1s;
+                        height: 21px;
 
                         &.far.fa-heart.fa-lg:hover{
                             opacity: 0;
-                            transition: opacity 1s;
+                            transition: opacity 0.5s;
                             color: black;
                             background-color: white;
                         }
@@ -340,18 +346,9 @@ $violet: #9356DC;
 
                     .fas.fa-heart.fa-lg.c1{
                         background-image: url('images/Coeur-plein[928].svg');
-                        background-color: transparent;
                         color: transparent;
-                        background-size: cover;
                         height: 21px;
                         width: 21px;
-                        z-index: -1;
-                        opacity: 100;
-
-                        &.fas.fa-heart.fa-lg.c1:hover{
-                            transition: 0.5s;
-                        }
-
                     }
                 }
             }
@@ -383,22 +380,6 @@ $violet: #9356DC;
                     } 
                 }
             }
-
-           /* .fa-heart {
-                color: #FFF;
-                background-color: #000;
-                border-radius: 50%;
-                padding: 2px;
-            }
-            .fa-heart::before {
-                content: "\f004";
-                font-weight: bold;
-                transition: color 1s ease-out;
-            }
-            .fa-heart:hover::before{
-                color: red;
-                cursor: pointer;
-            }*/
         }
 
     }
@@ -445,6 +426,55 @@ footer{
         }
     }
 }
+
+    #block_page{
+        animation: back ;
+        animation-duration: 4.6s;
+        opacity: 1;
+
+    }
+
+    @keyframes back{
+        0%{
+            opacity: 0.2;
+        }
+
+        50% {
+            opacity: 0.2;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    #loader {
+        position: absolute;
+        top: 420px;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        border: 8px solid #707070;
+        border-top: 8px solid $vert;
+        border-radius: 50%;
+        animation: spin 1.5s ease-in-out infinite;
+        animation-delay: 0.2s;
+        animation-iteration-count: 2;
+        visibility: hidden;
+    }
+  
+    @keyframes spin {
+        0% { 
+            transform: rotate(0deg);
+            visibility: visible;
+            opacity: 1;
+        }
+
+        100% {
+             transform: rotate(360deg);
+        }
+    }
+
 
 @media all and (min-width: 376px) and (max-width:779px){
 
@@ -609,7 +639,7 @@ footer{
     
                 .rond{
                     position: relative;
-                    left: -87px;
+                    left: -94px;
                     top: 0px;
                     background-color: $violet;
                     color: white;
@@ -757,10 +787,6 @@ footer{
                     a{
                         height: 100%;
                     }
-                }
-    
-                .fa-heart:hover{
-                    color: $violet;
                 }
             }
         }
@@ -1029,13 +1055,14 @@ footer{
             
                     .rond{
                         position: relative;
-                        left: -87px;
+                        left: -86px;
                         top: 0px;
                         background-color: $violet;
                         color: white;
                         border-radius: 50px;
                         height: 25px;
                         width: 25px;
+                        max-width: 1035px;
             
                         h4{
                             font-family: 'roboto_light';
@@ -1197,7 +1224,11 @@ footer{
             margin-top: 15px;
             border-radius: 3px;
             padding: 0px;
-    
+
+            &--modif{
+                left: 20%;
+            }
+
             span{
                 font-family: 'roboto_medium';
                 margin: 0px;
@@ -1210,6 +1241,8 @@ footer{
                 color: #4a8a7a;
             }
         }
+
+
     }
 
     footer{

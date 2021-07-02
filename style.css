@@ -177,6 +177,12 @@ header img {
           box-shadow: 5px 5px 15px #adadad;
 }
 
+.conteneur1 .reservation .div__bouton .reservation__bouton:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .conteneur2 {
   width: 100%;
   margin-top: 30px;
@@ -373,21 +379,10 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* .fa-heart {
-                color: #FFF;
-                background-color: #000;
-                border-radius: 50%;
-                padding: 2px;
-            }
-            .fa-heart::before {
-                content: "\f004";
-                font-weight: bold;
-                transition: color 1s ease-out;
-            }
-            .fa-heart:hover::before{
-                color: red;
-                cursor: pointer;
-            }*/
+}
+
+.conteneur3 .resto1 .resto__descritpion .coeurs {
+  cursor: pointer;
 }
 
 .conteneur3 .resto1 .resto__descritpion .coeurs .coeur1__2 {
@@ -400,32 +395,22 @@ header img {
   top: 3px;
   position: absolute;
   background-color: white;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  height: 21px;
 }
 
 .conteneur3 .resto1 .resto__descritpion .coeurs .coeur1__2 .far.fa-heart.fa-lg.far.fa-heart.fa-lg:hover {
   opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   color: black;
   background-color: white;
 }
 
 .conteneur3 .resto1 .resto__descritpion .coeurs .coeur1__2 .fas.fa-heart.fa-lg.c1 {
   background-image: url("images/Coeur-plein[928].svg");
-  background-color: transparent;
   color: transparent;
-  background-size: cover;
   height: 21px;
   width: 21px;
-  z-index: -1;
-  opacity: 100;
-}
-
-.conteneur3 .resto1 .resto__descritpion .coeurs .coeur1__2 .fas.fa-heart.fa-lg.c1.fas.fa-heart.fa-lg.c1:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .conteneur3 .resto1 .resto__descritpion .titre-sous-titre {
@@ -516,6 +501,82 @@ footer .footer__restaurant__partenaire .fa-utensils {
 
 footer .footer__restaurant__partenaire .fa-hands-helping {
   margin-right: 10px;
+}
+
+#block_page {
+  -webkit-animation: back;
+          animation: back;
+  -webkit-animation-duration: 4.6s;
+          animation-duration: 4.6s;
+  opacity: 1;
+}
+
+@-webkit-keyframes back {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#loader {
+  position: absolute;
+  top: 420px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border: 8px solid #707070;
+  border-top: 8px solid #99E2D0;
+  border-radius: 50%;
+  -webkit-animation: spin 1.5s ease-in-out infinite;
+          animation: spin 1.5s ease-in-out infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media all and (min-width: 376px) and (max-width: 779px) {
@@ -723,7 +784,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur2 .fonction > div .rond {
     position: relative;
-    left: -87px;
+    left: -94px;
     top: 0px;
     background-color: #9356DC;
     color: white;
@@ -872,9 +933,6 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur3 .resto1 .resto__descritpion .titre-sous-titre a {
     height: 100%;
-  }
-  .conteneur3 .resto1 .resto__descritpion .fa-heart:hover {
-    color: #9356DC;
   }
   .conteneur3 .new {
     position: absolute;
@@ -1196,13 +1254,14 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur__1__2 .conteneur2 .fonction > div .rond {
     position: relative;
-    left: -87px;
+    left: -86px;
     top: 0px;
     background-color: #9356DC;
     color: white;
     border-radius: 50px;
     height: 25px;
     width: 25px;
+    max-width: 1035px;
   }
   .conteneur__1__2 .conteneur2 .fonction > div .rond h4 {
     font-family: 'roboto_light';
@@ -1367,6 +1426,9 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     margin-top: 15px;
     border-radius: 3px;
     padding: 0px;
+  }
+  .conteneur3 .new--modif {
+    left: 20%;
   }
   .conteneur3 .new span {
     font-family: 'roboto_medium';

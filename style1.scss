@@ -107,6 +107,36 @@ header{
         font-size: 26px;
     }
 
+    .coeurs{
+
+        .coeur1__2{
+            position: relative;
+            /*transition: opacity 1s ease-out;*/
+            width: 23px;
+            
+            .far.fa-heart.fa-lg{
+                top: 3px;
+                position: absolute;
+                background-color: #f0f0f0;
+                height: 21px;
+
+                &.far.fa-heart.fa-lg:hover{
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                    color: black;
+                    background-color: #f0f0f0;
+                }
+            }
+
+            .fas.fa-heart.fa-lg.c1{
+                background-image: url('images/Coeur-plein[928].svg');
+                color: transparent;
+                height: 21px;
+                width: 21px;
+            }
+        }
+    }
+
     .entrees, .plats, .desserts{
         width: 90%;
         height: 270px;
@@ -123,6 +153,51 @@ header{
             font-family: 'roboto_thin' ;
             font-size: 16px;
             border-bottom: 3px solid #99E2D0;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+
+        .entree__tartare{
+            animation: fadein 0.5s;
+        }
+
+        .entree__veloute{
+            animation: fadein 1s;
+        }
+
+        .entree__soupe{
+            animation: fadein 1.5s;
+        }
+
+        .plats__s-j{
+            animation: fadein 2s;
+        }
+
+        .plats__magret{
+            animation: fadein 2.5s;
+        }
+
+        .plats__pigeon{
+            animation: fadein 3s;
+        }
+
+        .desserts__violette{
+            animation: fadein 3.5s;
+        }
+
+        .desserts__fondant{
+            animation: fadein 4s;
+        }
+
+        .desserts__millefeuille{
+            animation: fadein 4.5s;
         }
 
         .entree__tartare, .entree__veloute, .entree__soupe, .plats__s-j, .plats__magret, .plats__pigeon, .desserts__violette, .desserts__fondant, .desserts__millefeuille{
@@ -184,6 +259,11 @@ header{
             cursor: pointer;
             box-shadow: 5px 5px 15px #adadad;
             font-family: 'roboto_medium';
+
+            &:hover{
+                opacity: 0.8;
+                transition: 0.3s;
+            }
         }
     }
 }
@@ -195,12 +275,12 @@ footer{
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: -60px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     line-height: 0;
     position: relative;
-    margin-top: 200px;
 
     h3{
         font-size: 16px;
@@ -300,11 +380,11 @@ footer{
             margin-left: auto;
             margin-right: auto;
             padding-top: 20px;
-        }
-    
-        h1{
-            font-family: 'shrikland';
-            font-size: 27px;
+
+            h1{
+                font-family: 'shrikland';
+                font-size: 27px;
+            }
         }
     
         .entrees, .plats, .desserts{
@@ -317,7 +397,7 @@ footer{
             margin-top: 20px;
     
             > h2{
-                width: 12%;
+                width: 40px;
                 height: 22px;
                 margin: 0px;
                 font-family: 'roboto_thin' ;
@@ -435,6 +515,8 @@ footer{
 
 $background: #f0f0f0;
 
+/* Version Desktop */
+
 @media all and (min-width:780px){
 
     #block_page, body{
@@ -507,20 +589,51 @@ $background: #f0f0f0;
             margin-left: auto;
             margin-right: auto;
             padding-top: 20px;
+
+            h1{
+                font-family: 'shrikland';
+                font-size: 30px;
+            }
         }
+
+        .coeurs{
+            cursor: pointer;
+
+            .coeur1__2{
+                position: relative;
+                /*transition: opacity 1s ease-out;*/
+                width: 23px;
+                
+                .far.fa-heart.fa-lg{
+                    top: 3px;
+                    position: absolute;
+                    background-color: white;
+                    height: 21px;
     
-        h1{
-            font-family: 'shrikland';
-            font-size: 30px;
+                    &.far.fa-heart.fa-lg:hover{
+                        opacity: 0;
+                        transition: opacity 0.5s;
+                        color: black;
+                        background-color: white;
+                    }
+                }
+    
+                .fas.fa-heart.fa-lg.c1{
+                    background-image: url('images/Coeur-plein[928].svg');
+                    color: transparent;
+                    height: 21px;
+                    width: 21px;
+                }
+            }
         }
 
         .epd{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 90%;
+            width: 85%;
             margin: auto;
-            padding: 5px;
+            padding: 55px;
             padding-top: 5px;
             padding-bottom: 25px;
             margin-top: 15px;
@@ -536,15 +649,9 @@ $background: #f0f0f0;
             flex-direction: column;
             justify-content: space-around;
             margin-top: 20px;
-
-            &--modif{
-                margin:0px;
-                margin-top: 20px;
-                margin-left: 25px;
-            }
     
             > h2{
-                width: 12%;
+                width: 45px;
                 height: 22px;
                 margin: 0px;
                 font-family: 'roboto_thin' ;
@@ -560,6 +667,8 @@ $background: #f0f0f0;
                 flex-direction: column;
                 justify-content: center;
                 box-shadow: 2px 2px 10px #d8d8d8;
+                max-width: 540px;
+                z-index: 1;
     
                 .entree__tartare__titre, .entree__veloute__titre, .entree__soupe__titre, .plats__s-j__titre, .plats__magret__titre, .plats__pigeon__titre, .desserts__violette__titre, .desserts__fondant__titre, .desserts__millefeuille__titre {
                     width: 90%;
@@ -589,6 +698,19 @@ $background: #f0f0f0;
                     font-family:'roboto_thin' ;
                     line-height: 0; 
                 }   
+
+                .coche{
+                    position: absolute;
+                    width: 10px;
+                    height: 65px;
+                    background-color: grey;
+                    z-index: -1;
+                    left: 470px;
+                    border-radius: 0px 15px 15px 0px;
+                    transition: margin-right 2s;
+
+
+                }
             }
         }
     

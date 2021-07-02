@@ -115,6 +115,35 @@ header img {
   font-size: 26px;
 }
 
+.conteneur1 .coeurs .coeur1__2 {
+  position: relative;
+  /*transition: opacity 1s ease-out;*/
+  width: 23px;
+}
+
+.conteneur1 .coeurs .coeur1__2 .far.fa-heart.fa-lg {
+  top: 3px;
+  position: absolute;
+  background-color: #f0f0f0;
+  height: 21px;
+}
+
+.conteneur1 .coeurs .coeur1__2 .far.fa-heart.fa-lg.far.fa-heart.fa-lg:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  color: black;
+  background-color: #f0f0f0;
+}
+
+.conteneur1 .coeurs .coeur1__2 .fas.fa-heart.fa-lg.c1 {
+  background-image: url("images/Coeur-plein[928].svg");
+  background-color: transparent;
+  color: transparent;
+  height: 21px;
+  width: 21px;
+}
+
 .conteneur1 .entrees, .conteneur1 .plats, .conteneur1 .desserts {
   width: 90%;
   height: 270px;
@@ -138,6 +167,69 @@ header img {
   font-family: 'roboto_thin';
   font-size: 16px;
   border-bottom: 3px solid #99E2D0;
+}
+
+.conteneur1 .entrees .entree__escargot, .conteneur1 .plats .entree__escargot, .conteneur1 .desserts .entree__escargot {
+  -webkit-animation: fadein 0.5s;
+          animation: fadein 0.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.conteneur1 .entrees .entree__foie, .conteneur1 .plats .entree__foie, .conteneur1 .desserts .entree__foie {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
+.conteneur1 .entrees .entree__oeuf, .conteneur1 .plats .entree__oeuf, .conteneur1 .desserts .entree__oeuf {
+  -webkit-animation: fadein 1.5s;
+          animation: fadein 1.5s;
+}
+
+.conteneur1 .entrees .plats__filet, .conteneur1 .plats .plats__filet, .conteneur1 .desserts .plats__filet {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.conteneur1 .entrees .plats__parmentier, .conteneur1 .plats .plats__parmentier, .conteneur1 .desserts .plats__parmentier {
+  -webkit-animation: fadein 2.5s;
+          animation: fadein 2.5s;
+}
+
+.conteneur1 .entrees .plats__turbot, .conteneur1 .plats .plats__turbot, .conteneur1 .desserts .plats__turbot {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.conteneur1 .entrees .desserts__PB, .conteneur1 .plats .desserts__PB, .conteneur1 .desserts .desserts__PB {
+  -webkit-animation: fadein 3.5s;
+          animation: fadein 3.5s;
+}
+
+.conteneur1 .entrees .desserts__macaron, .conteneur1 .plats .desserts__macaron, .conteneur1 .desserts .desserts__macaron {
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+.conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .desserts__mousse {
+  -webkit-animation: fadein 4.5s;
+          animation: fadein 4.5s;
 }
 
 .conteneur1 .entrees .entree__escargot, .conteneur1 .entrees .entree__foie, .conteneur1 .entrees .entree__oeuf, .conteneur1 .entrees .plats__filet, .conteneur1 .entrees .plats__parmentier, .conteneur1 .entrees .plats__turbot, .conteneur1 .entrees .desserts__PB, .conteneur1 .entrees .desserts__macaron, .conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .entree__escargot, .conteneur1 .plats .entree__foie, .conteneur1 .plats .entree__oeuf, .conteneur1 .plats .plats__filet, .conteneur1 .plats .plats__parmentier, .conteneur1 .plats .plats__turbot, .conteneur1 .plats .desserts__PB, .conteneur1 .plats .desserts__macaron, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .entree__escargot, .conteneur1 .desserts .entree__foie, .conteneur1 .desserts .entree__oeuf, .conteneur1 .desserts .plats__filet, .conteneur1 .desserts .plats__parmentier, .conteneur1 .desserts .plats__turbot, .conteneur1 .desserts .desserts__PB, .conteneur1 .desserts .desserts__macaron, .conteneur1 .desserts .desserts__mousse {
@@ -274,5 +366,472 @@ footer .footer__restaurant__partenaire .fa-utensils {
 
 footer .footer__restaurant__partenaire .fa-hands-helping {
   margin-right: 10px;
+}
+
+@media all and (min-width: 376px) and (max-width: 779px) {
+  .block_page, body {
+    width: 780px;
+    margin: auto;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 60px;
+  }
+  header .fa-arrow-left {
+    margin-left: 30px;
+    margin-right: 70px;
+    color: #414141;
+  }
+  header img {
+    width: 160px;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .background {
+    width: 100%;
+    height: 252px;
+  }
+  .background img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 780px;
+  }
+  .conteneur1 {
+    width: 100%;
+    height: 970px;
+    background-color: #f0f0f0;
+    position: relative;
+    margin: auto;
+    top: 20px;
+    border-radius: 35px 35px 0px 0px;
+    padding-bottom: 130px;
+  }
+  .conteneur1 > a {
+    width: 100%;
+    height: 150px;
+  }
+  .conteneur1 a:visited {
+    color: white;
+  }
+  .conteneur1 .titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+  .conteneur1 .titre h1 {
+    font-family: 'shrikland';
+    font-size: 27px;
+  }
+  .conteneur1 .entrees, .conteneur1 .plats, .conteneur1 .desserts {
+    width: 90%;
+    height: 270px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 20px;
+  }
+  .conteneur1 .entrees > h2, .conteneur1 .plats > h2, .conteneur1 .desserts > h2 {
+    width: 40px;
+    height: 22px;
+    margin: 0px;
+    font-family: 'roboto_thin';
+    font-size: 17px;
+    border-bottom: 3px solid #99E2D0;
+  }
+  .conteneur1 .entrees .entree__escargot, .conteneur1 .entrees .entree__foie, .conteneur1 .entrees .entree__oeuf, .conteneur1 .entrees .plats__filet, .conteneur1 .entrees .plats__parmentier, .conteneur1 .entrees .plats__turbot, .conteneur1 .entrees .desserts__PB, .conteneur1 .entrees .desserts__macaron, .conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .entree__escargot, .conteneur1 .plats .entree__foie, .conteneur1 .plats .entree__oeuf, .conteneur1 .plats .plats__filet, .conteneur1 .plats .plats__parmentier, .conteneur1 .plats .plats__turbot, .conteneur1 .plats .desserts__PB, .conteneur1 .plats .desserts__macaron, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .entree__escargot, .conteneur1 .desserts .entree__foie, .conteneur1 .desserts .entree__oeuf, .conteneur1 .desserts .plats__filet, .conteneur1 .desserts .plats__parmentier, .conteneur1 .desserts .plats__turbot, .conteneur1 .desserts .desserts__PB, .conteneur1 .desserts .desserts__macaron, .conteneur1 .desserts .desserts__mousse {
+    height: 65px;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 2px 2px 10px #d8d8d8;
+            box-shadow: 2px 2px 10px #d8d8d8;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__titre, .conteneur1 .entrees .entree__escargot .entree__foie__titre, .conteneur1 .entrees .entree__escargot .entree__oeuf__titre, .conteneur1 .entrees .entree__escargot .plats__filet__titre, .conteneur1 .entrees .entree__escargot .plats__parmentier__titre, .conteneur1 .entrees .entree__escargot .plats__turbot__titre, .conteneur1 .entrees .entree__escargot .desserts__PB__titre, .conteneur1 .entrees .entree__escargot .desserts__macaron__titre, .conteneur1 .entrees .entree__escargot .desserts__mousse__titre, .conteneur1 .entrees .entree__foie .entree__escargot__titre, .conteneur1 .entrees .entree__foie .entree__foie__titre, .conteneur1 .entrees .entree__foie .entree__oeuf__titre, .conteneur1 .entrees .entree__foie .plats__filet__titre, .conteneur1 .entrees .entree__foie .plats__parmentier__titre, .conteneur1 .entrees .entree__foie .plats__turbot__titre, .conteneur1 .entrees .entree__foie .desserts__PB__titre, .conteneur1 .entrees .entree__foie .desserts__macaron__titre, .conteneur1 .entrees .entree__foie .desserts__mousse__titre, .conteneur1 .entrees .entree__oeuf .entree__escargot__titre, .conteneur1 .entrees .entree__oeuf .entree__foie__titre, .conteneur1 .entrees .entree__oeuf .entree__oeuf__titre, .conteneur1 .entrees .entree__oeuf .plats__filet__titre, .conteneur1 .entrees .entree__oeuf .plats__parmentier__titre, .conteneur1 .entrees .entree__oeuf .plats__turbot__titre, .conteneur1 .entrees .entree__oeuf .desserts__PB__titre, .conteneur1 .entrees .entree__oeuf .desserts__macaron__titre, .conteneur1 .entrees .entree__oeuf .desserts__mousse__titre, .conteneur1 .entrees .plats__filet .entree__escargot__titre, .conteneur1 .entrees .plats__filet .entree__foie__titre, .conteneur1 .entrees .plats__filet .entree__oeuf__titre, .conteneur1 .entrees .plats__filet .plats__filet__titre, .conteneur1 .entrees .plats__filet .plats__parmentier__titre, .conteneur1 .entrees .plats__filet .plats__turbot__titre, .conteneur1 .entrees .plats__filet .desserts__PB__titre, .conteneur1 .entrees .plats__filet .desserts__macaron__titre, .conteneur1 .entrees .plats__filet .desserts__mousse__titre, .conteneur1 .entrees .plats__parmentier .entree__escargot__titre, .conteneur1 .entrees .plats__parmentier .entree__foie__titre, .conteneur1 .entrees .plats__parmentier .entree__oeuf__titre, .conteneur1 .entrees .plats__parmentier .plats__filet__titre, .conteneur1 .entrees .plats__parmentier .plats__parmentier__titre, .conteneur1 .entrees .plats__parmentier .plats__turbot__titre, .conteneur1 .entrees .plats__parmentier .desserts__PB__titre, .conteneur1 .entrees .plats__parmentier .desserts__macaron__titre, .conteneur1 .entrees .plats__parmentier .desserts__mousse__titre, .conteneur1 .entrees .plats__turbot .entree__escargot__titre, .conteneur1 .entrees .plats__turbot .entree__foie__titre, .conteneur1 .entrees .plats__turbot .entree__oeuf__titre, .conteneur1 .entrees .plats__turbot .plats__filet__titre, .conteneur1 .entrees .plats__turbot .plats__parmentier__titre, .conteneur1 .entrees .plats__turbot .plats__turbot__titre, .conteneur1 .entrees .plats__turbot .desserts__PB__titre, .conteneur1 .entrees .plats__turbot .desserts__macaron__titre, .conteneur1 .entrees .plats__turbot .desserts__mousse__titre, .conteneur1 .entrees .desserts__PB .entree__escargot__titre, .conteneur1 .entrees .desserts__PB .entree__foie__titre, .conteneur1 .entrees .desserts__PB .entree__oeuf__titre, .conteneur1 .entrees .desserts__PB .plats__filet__titre, .conteneur1 .entrees .desserts__PB .plats__parmentier__titre, .conteneur1 .entrees .desserts__PB .plats__turbot__titre, .conteneur1 .entrees .desserts__PB .desserts__PB__titre, .conteneur1 .entrees .desserts__PB .desserts__macaron__titre, .conteneur1 .entrees .desserts__PB .desserts__mousse__titre, .conteneur1 .entrees .desserts__macaron .entree__escargot__titre, .conteneur1 .entrees .desserts__macaron .entree__foie__titre, .conteneur1 .entrees .desserts__macaron .entree__oeuf__titre, .conteneur1 .entrees .desserts__macaron .plats__filet__titre, .conteneur1 .entrees .desserts__macaron .plats__parmentier__titre, .conteneur1 .entrees .desserts__macaron .plats__turbot__titre, .conteneur1 .entrees .desserts__macaron .desserts__PB__titre, .conteneur1 .entrees .desserts__macaron .desserts__macaron__titre, .conteneur1 .entrees .desserts__macaron .desserts__mousse__titre, .conteneur1 .entrees .desserts__mousse .entree__escargot__titre, .conteneur1 .entrees .desserts__mousse .entree__foie__titre, .conteneur1 .entrees .desserts__mousse .entree__oeuf__titre, .conteneur1 .entrees .desserts__mousse .plats__filet__titre, .conteneur1 .entrees .desserts__mousse .plats__parmentier__titre, .conteneur1 .entrees .desserts__mousse .plats__turbot__titre, .conteneur1 .entrees .desserts__mousse .desserts__PB__titre, .conteneur1 .entrees .desserts__mousse .desserts__macaron__titre, .conteneur1 .entrees .desserts__mousse .desserts__mousse__titre, .conteneur1 .plats .entree__escargot .entree__escargot__titre, .conteneur1 .plats .entree__escargot .entree__foie__titre, .conteneur1 .plats .entree__escargot .entree__oeuf__titre, .conteneur1 .plats .entree__escargot .plats__filet__titre, .conteneur1 .plats .entree__escargot .plats__parmentier__titre, .conteneur1 .plats .entree__escargot .plats__turbot__titre, .conteneur1 .plats .entree__escargot .desserts__PB__titre, .conteneur1 .plats .entree__escargot .desserts__macaron__titre, .conteneur1 .plats .entree__escargot .desserts__mousse__titre, .conteneur1 .plats .entree__foie .entree__escargot__titre, .conteneur1 .plats .entree__foie .entree__foie__titre, .conteneur1 .plats .entree__foie .entree__oeuf__titre, .conteneur1 .plats .entree__foie .plats__filet__titre, .conteneur1 .plats .entree__foie .plats__parmentier__titre, .conteneur1 .plats .entree__foie .plats__turbot__titre, .conteneur1 .plats .entree__foie .desserts__PB__titre, .conteneur1 .plats .entree__foie .desserts__macaron__titre, .conteneur1 .plats .entree__foie .desserts__mousse__titre, .conteneur1 .plats .entree__oeuf .entree__escargot__titre, .conteneur1 .plats .entree__oeuf .entree__foie__titre, .conteneur1 .plats .entree__oeuf .entree__oeuf__titre, .conteneur1 .plats .entree__oeuf .plats__filet__titre, .conteneur1 .plats .entree__oeuf .plats__parmentier__titre, .conteneur1 .plats .entree__oeuf .plats__turbot__titre, .conteneur1 .plats .entree__oeuf .desserts__PB__titre, .conteneur1 .plats .entree__oeuf .desserts__macaron__titre, .conteneur1 .plats .entree__oeuf .desserts__mousse__titre, .conteneur1 .plats .plats__filet .entree__escargot__titre, .conteneur1 .plats .plats__filet .entree__foie__titre, .conteneur1 .plats .plats__filet .entree__oeuf__titre, .conteneur1 .plats .plats__filet .plats__filet__titre, .conteneur1 .plats .plats__filet .plats__parmentier__titre, .conteneur1 .plats .plats__filet .plats__turbot__titre, .conteneur1 .plats .plats__filet .desserts__PB__titre, .conteneur1 .plats .plats__filet .desserts__macaron__titre, .conteneur1 .plats .plats__filet .desserts__mousse__titre, .conteneur1 .plats .plats__parmentier .entree__escargot__titre, .conteneur1 .plats .plats__parmentier .entree__foie__titre, .conteneur1 .plats .plats__parmentier .entree__oeuf__titre, .conteneur1 .plats .plats__parmentier .plats__filet__titre, .conteneur1 .plats .plats__parmentier .plats__parmentier__titre, .conteneur1 .plats .plats__parmentier .plats__turbot__titre, .conteneur1 .plats .plats__parmentier .desserts__PB__titre, .conteneur1 .plats .plats__parmentier .desserts__macaron__titre, .conteneur1 .plats .plats__parmentier .desserts__mousse__titre, .conteneur1 .plats .plats__turbot .entree__escargot__titre, .conteneur1 .plats .plats__turbot .entree__foie__titre, .conteneur1 .plats .plats__turbot .entree__oeuf__titre, .conteneur1 .plats .plats__turbot .plats__filet__titre, .conteneur1 .plats .plats__turbot .plats__parmentier__titre, .conteneur1 .plats .plats__turbot .plats__turbot__titre, .conteneur1 .plats .plats__turbot .desserts__PB__titre, .conteneur1 .plats .plats__turbot .desserts__macaron__titre, .conteneur1 .plats .plats__turbot .desserts__mousse__titre, .conteneur1 .plats .desserts__PB .entree__escargot__titre, .conteneur1 .plats .desserts__PB .entree__foie__titre, .conteneur1 .plats .desserts__PB .entree__oeuf__titre, .conteneur1 .plats .desserts__PB .plats__filet__titre, .conteneur1 .plats .desserts__PB .plats__parmentier__titre, .conteneur1 .plats .desserts__PB .plats__turbot__titre, .conteneur1 .plats .desserts__PB .desserts__PB__titre, .conteneur1 .plats .desserts__PB .desserts__macaron__titre, .conteneur1 .plats .desserts__PB .desserts__mousse__titre, .conteneur1 .plats .desserts__macaron .entree__escargot__titre, .conteneur1 .plats .desserts__macaron .entree__foie__titre, .conteneur1 .plats .desserts__macaron .entree__oeuf__titre, .conteneur1 .plats .desserts__macaron .plats__filet__titre, .conteneur1 .plats .desserts__macaron .plats__parmentier__titre, .conteneur1 .plats .desserts__macaron .plats__turbot__titre, .conteneur1 .plats .desserts__macaron .desserts__PB__titre, .conteneur1 .plats .desserts__macaron .desserts__macaron__titre, .conteneur1 .plats .desserts__macaron .desserts__mousse__titre, .conteneur1 .plats .desserts__mousse .entree__escargot__titre, .conteneur1 .plats .desserts__mousse .entree__foie__titre, .conteneur1 .plats .desserts__mousse .entree__oeuf__titre, .conteneur1 .plats .desserts__mousse .plats__filet__titre, .conteneur1 .plats .desserts__mousse .plats__parmentier__titre, .conteneur1 .plats .desserts__mousse .plats__turbot__titre, .conteneur1 .plats .desserts__mousse .desserts__PB__titre, .conteneur1 .plats .desserts__mousse .desserts__macaron__titre, .conteneur1 .plats .desserts__mousse .desserts__mousse__titre, .conteneur1 .desserts .entree__escargot .entree__escargot__titre, .conteneur1 .desserts .entree__escargot .entree__foie__titre, .conteneur1 .desserts .entree__escargot .entree__oeuf__titre, .conteneur1 .desserts .entree__escargot .plats__filet__titre, .conteneur1 .desserts .entree__escargot .plats__parmentier__titre, .conteneur1 .desserts .entree__escargot .plats__turbot__titre, .conteneur1 .desserts .entree__escargot .desserts__PB__titre, .conteneur1 .desserts .entree__escargot .desserts__macaron__titre, .conteneur1 .desserts .entree__escargot .desserts__mousse__titre, .conteneur1 .desserts .entree__foie .entree__escargot__titre, .conteneur1 .desserts .entree__foie .entree__foie__titre, .conteneur1 .desserts .entree__foie .entree__oeuf__titre, .conteneur1 .desserts .entree__foie .plats__filet__titre, .conteneur1 .desserts .entree__foie .plats__parmentier__titre, .conteneur1 .desserts .entree__foie .plats__turbot__titre, .conteneur1 .desserts .entree__foie .desserts__PB__titre, .conteneur1 .desserts .entree__foie .desserts__macaron__titre, .conteneur1 .desserts .entree__foie .desserts__mousse__titre, .conteneur1 .desserts .entree__oeuf .entree__escargot__titre, .conteneur1 .desserts .entree__oeuf .entree__foie__titre, .conteneur1 .desserts .entree__oeuf .entree__oeuf__titre, .conteneur1 .desserts .entree__oeuf .plats__filet__titre, .conteneur1 .desserts .entree__oeuf .plats__parmentier__titre, .conteneur1 .desserts .entree__oeuf .plats__turbot__titre, .conteneur1 .desserts .entree__oeuf .desserts__PB__titre, .conteneur1 .desserts .entree__oeuf .desserts__macaron__titre, .conteneur1 .desserts .entree__oeuf .desserts__mousse__titre, .conteneur1 .desserts .plats__filet .entree__escargot__titre, .conteneur1 .desserts .plats__filet .entree__foie__titre, .conteneur1 .desserts .plats__filet .entree__oeuf__titre, .conteneur1 .desserts .plats__filet .plats__filet__titre, .conteneur1 .desserts .plats__filet .plats__parmentier__titre, .conteneur1 .desserts .plats__filet .plats__turbot__titre, .conteneur1 .desserts .plats__filet .desserts__PB__titre, .conteneur1 .desserts .plats__filet .desserts__macaron__titre, .conteneur1 .desserts .plats__filet .desserts__mousse__titre, .conteneur1 .desserts .plats__parmentier .entree__escargot__titre, .conteneur1 .desserts .plats__parmentier .entree__foie__titre, .conteneur1 .desserts .plats__parmentier .entree__oeuf__titre, .conteneur1 .desserts .plats__parmentier .plats__filet__titre, .conteneur1 .desserts .plats__parmentier .plats__parmentier__titre, .conteneur1 .desserts .plats__parmentier .plats__turbot__titre, .conteneur1 .desserts .plats__parmentier .desserts__PB__titre, .conteneur1 .desserts .plats__parmentier .desserts__macaron__titre, .conteneur1 .desserts .plats__parmentier .desserts__mousse__titre, .conteneur1 .desserts .plats__turbot .entree__escargot__titre, .conteneur1 .desserts .plats__turbot .entree__foie__titre, .conteneur1 .desserts .plats__turbot .entree__oeuf__titre, .conteneur1 .desserts .plats__turbot .plats__filet__titre, .conteneur1 .desserts .plats__turbot .plats__parmentier__titre, .conteneur1 .desserts .plats__turbot .plats__turbot__titre, .conteneur1 .desserts .plats__turbot .desserts__PB__titre, .conteneur1 .desserts .plats__turbot .desserts__macaron__titre, .conteneur1 .desserts .plats__turbot .desserts__mousse__titre, .conteneur1 .desserts .desserts__PB .entree__escargot__titre, .conteneur1 .desserts .desserts__PB .entree__foie__titre, .conteneur1 .desserts .desserts__PB .entree__oeuf__titre, .conteneur1 .desserts .desserts__PB .plats__filet__titre, .conteneur1 .desserts .desserts__PB .plats__parmentier__titre, .conteneur1 .desserts .desserts__PB .plats__turbot__titre, .conteneur1 .desserts .desserts__PB .desserts__PB__titre, .conteneur1 .desserts .desserts__PB .desserts__macaron__titre, .conteneur1 .desserts .desserts__PB .desserts__mousse__titre, .conteneur1 .desserts .desserts__macaron .entree__escargot__titre, .conteneur1 .desserts .desserts__macaron .entree__foie__titre, .conteneur1 .desserts .desserts__macaron .entree__oeuf__titre, .conteneur1 .desserts .desserts__macaron .plats__filet__titre, .conteneur1 .desserts .desserts__macaron .plats__parmentier__titre, .conteneur1 .desserts .desserts__macaron .plats__turbot__titre, .conteneur1 .desserts .desserts__macaron .desserts__PB__titre, .conteneur1 .desserts .desserts__macaron .desserts__macaron__titre, .conteneur1 .desserts .desserts__macaron .desserts__mousse__titre, .conteneur1 .desserts .desserts__mousse .entree__escargot__titre, .conteneur1 .desserts .desserts__mousse .entree__foie__titre, .conteneur1 .desserts .desserts__mousse .entree__oeuf__titre, .conteneur1 .desserts .desserts__mousse .plats__filet__titre, .conteneur1 .desserts .desserts__mousse .plats__parmentier__titre, .conteneur1 .desserts .desserts__mousse .plats__turbot__titre, .conteneur1 .desserts .desserts__mousse .desserts__PB__titre, .conteneur1 .desserts .desserts__mousse .desserts__macaron__titre, .conteneur1 .desserts .desserts__mousse .desserts__mousse__titre {
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'roboto_medium';
+    font-size: 18px;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__st, .conteneur1 .entrees .entree__escargot .entree__foie__st, .conteneur1 .entrees .entree__escargot .entree__oeuf__st, .conteneur1 .entrees .entree__escargot .plats__filet__st, .conteneur1 .entrees .entree__escargot .plats__parmentier__st, .conteneur1 .entrees .entree__escargot .plats__turbot__st, .conteneur1 .entrees .entree__escargot .desserts__PB__st, .conteneur1 .entrees .entree__escargot .desserts__macaron__st, .conteneur1 .entrees .entree__escargot .desserts__mousse__st, .conteneur1 .entrees .entree__foie .entree__escargot__st, .conteneur1 .entrees .entree__foie .entree__foie__st, .conteneur1 .entrees .entree__foie .entree__oeuf__st, .conteneur1 .entrees .entree__foie .plats__filet__st, .conteneur1 .entrees .entree__foie .plats__parmentier__st, .conteneur1 .entrees .entree__foie .plats__turbot__st, .conteneur1 .entrees .entree__foie .desserts__PB__st, .conteneur1 .entrees .entree__foie .desserts__macaron__st, .conteneur1 .entrees .entree__foie .desserts__mousse__st, .conteneur1 .entrees .entree__oeuf .entree__escargot__st, .conteneur1 .entrees .entree__oeuf .entree__foie__st, .conteneur1 .entrees .entree__oeuf .entree__oeuf__st, .conteneur1 .entrees .entree__oeuf .plats__filet__st, .conteneur1 .entrees .entree__oeuf .plats__parmentier__st, .conteneur1 .entrees .entree__oeuf .plats__turbot__st, .conteneur1 .entrees .entree__oeuf .desserts__PB__st, .conteneur1 .entrees .entree__oeuf .desserts__macaron__st, .conteneur1 .entrees .entree__oeuf .desserts__mousse__st, .conteneur1 .entrees .plats__filet .entree__escargot__st, .conteneur1 .entrees .plats__filet .entree__foie__st, .conteneur1 .entrees .plats__filet .entree__oeuf__st, .conteneur1 .entrees .plats__filet .plats__filet__st, .conteneur1 .entrees .plats__filet .plats__parmentier__st, .conteneur1 .entrees .plats__filet .plats__turbot__st, .conteneur1 .entrees .plats__filet .desserts__PB__st, .conteneur1 .entrees .plats__filet .desserts__macaron__st, .conteneur1 .entrees .plats__filet .desserts__mousse__st, .conteneur1 .entrees .plats__parmentier .entree__escargot__st, .conteneur1 .entrees .plats__parmentier .entree__foie__st, .conteneur1 .entrees .plats__parmentier .entree__oeuf__st, .conteneur1 .entrees .plats__parmentier .plats__filet__st, .conteneur1 .entrees .plats__parmentier .plats__parmentier__st, .conteneur1 .entrees .plats__parmentier .plats__turbot__st, .conteneur1 .entrees .plats__parmentier .desserts__PB__st, .conteneur1 .entrees .plats__parmentier .desserts__macaron__st, .conteneur1 .entrees .plats__parmentier .desserts__mousse__st, .conteneur1 .entrees .plats__turbot .entree__escargot__st, .conteneur1 .entrees .plats__turbot .entree__foie__st, .conteneur1 .entrees .plats__turbot .entree__oeuf__st, .conteneur1 .entrees .plats__turbot .plats__filet__st, .conteneur1 .entrees .plats__turbot .plats__parmentier__st, .conteneur1 .entrees .plats__turbot .plats__turbot__st, .conteneur1 .entrees .plats__turbot .desserts__PB__st, .conteneur1 .entrees .plats__turbot .desserts__macaron__st, .conteneur1 .entrees .plats__turbot .desserts__mousse__st, .conteneur1 .entrees .desserts__PB .entree__escargot__st, .conteneur1 .entrees .desserts__PB .entree__foie__st, .conteneur1 .entrees .desserts__PB .entree__oeuf__st, .conteneur1 .entrees .desserts__PB .plats__filet__st, .conteneur1 .entrees .desserts__PB .plats__parmentier__st, .conteneur1 .entrees .desserts__PB .plats__turbot__st, .conteneur1 .entrees .desserts__PB .desserts__PB__st, .conteneur1 .entrees .desserts__PB .desserts__macaron__st, .conteneur1 .entrees .desserts__PB .desserts__mousse__st, .conteneur1 .entrees .desserts__macaron .entree__escargot__st, .conteneur1 .entrees .desserts__macaron .entree__foie__st, .conteneur1 .entrees .desserts__macaron .entree__oeuf__st, .conteneur1 .entrees .desserts__macaron .plats__filet__st, .conteneur1 .entrees .desserts__macaron .plats__parmentier__st, .conteneur1 .entrees .desserts__macaron .plats__turbot__st, .conteneur1 .entrees .desserts__macaron .desserts__PB__st, .conteneur1 .entrees .desserts__macaron .desserts__macaron__st, .conteneur1 .entrees .desserts__macaron .desserts__mousse__st, .conteneur1 .entrees .desserts__mousse .entree__escargot__st, .conteneur1 .entrees .desserts__mousse .entree__foie__st, .conteneur1 .entrees .desserts__mousse .entree__oeuf__st, .conteneur1 .entrees .desserts__mousse .plats__filet__st, .conteneur1 .entrees .desserts__mousse .plats__parmentier__st, .conteneur1 .entrees .desserts__mousse .plats__turbot__st, .conteneur1 .entrees .desserts__mousse .desserts__PB__st, .conteneur1 .entrees .desserts__mousse .desserts__macaron__st, .conteneur1 .entrees .desserts__mousse .desserts__mousse__st, .conteneur1 .plats .entree__escargot .entree__escargot__st, .conteneur1 .plats .entree__escargot .entree__foie__st, .conteneur1 .plats .entree__escargot .entree__oeuf__st, .conteneur1 .plats .entree__escargot .plats__filet__st, .conteneur1 .plats .entree__escargot .plats__parmentier__st, .conteneur1 .plats .entree__escargot .plats__turbot__st, .conteneur1 .plats .entree__escargot .desserts__PB__st, .conteneur1 .plats .entree__escargot .desserts__macaron__st, .conteneur1 .plats .entree__escargot .desserts__mousse__st, .conteneur1 .plats .entree__foie .entree__escargot__st, .conteneur1 .plats .entree__foie .entree__foie__st, .conteneur1 .plats .entree__foie .entree__oeuf__st, .conteneur1 .plats .entree__foie .plats__filet__st, .conteneur1 .plats .entree__foie .plats__parmentier__st, .conteneur1 .plats .entree__foie .plats__turbot__st, .conteneur1 .plats .entree__foie .desserts__PB__st, .conteneur1 .plats .entree__foie .desserts__macaron__st, .conteneur1 .plats .entree__foie .desserts__mousse__st, .conteneur1 .plats .entree__oeuf .entree__escargot__st, .conteneur1 .plats .entree__oeuf .entree__foie__st, .conteneur1 .plats .entree__oeuf .entree__oeuf__st, .conteneur1 .plats .entree__oeuf .plats__filet__st, .conteneur1 .plats .entree__oeuf .plats__parmentier__st, .conteneur1 .plats .entree__oeuf .plats__turbot__st, .conteneur1 .plats .entree__oeuf .desserts__PB__st, .conteneur1 .plats .entree__oeuf .desserts__macaron__st, .conteneur1 .plats .entree__oeuf .desserts__mousse__st, .conteneur1 .plats .plats__filet .entree__escargot__st, .conteneur1 .plats .plats__filet .entree__foie__st, .conteneur1 .plats .plats__filet .entree__oeuf__st, .conteneur1 .plats .plats__filet .plats__filet__st, .conteneur1 .plats .plats__filet .plats__parmentier__st, .conteneur1 .plats .plats__filet .plats__turbot__st, .conteneur1 .plats .plats__filet .desserts__PB__st, .conteneur1 .plats .plats__filet .desserts__macaron__st, .conteneur1 .plats .plats__filet .desserts__mousse__st, .conteneur1 .plats .plats__parmentier .entree__escargot__st, .conteneur1 .plats .plats__parmentier .entree__foie__st, .conteneur1 .plats .plats__parmentier .entree__oeuf__st, .conteneur1 .plats .plats__parmentier .plats__filet__st, .conteneur1 .plats .plats__parmentier .plats__parmentier__st, .conteneur1 .plats .plats__parmentier .plats__turbot__st, .conteneur1 .plats .plats__parmentier .desserts__PB__st, .conteneur1 .plats .plats__parmentier .desserts__macaron__st, .conteneur1 .plats .plats__parmentier .desserts__mousse__st, .conteneur1 .plats .plats__turbot .entree__escargot__st, .conteneur1 .plats .plats__turbot .entree__foie__st, .conteneur1 .plats .plats__turbot .entree__oeuf__st, .conteneur1 .plats .plats__turbot .plats__filet__st, .conteneur1 .plats .plats__turbot .plats__parmentier__st, .conteneur1 .plats .plats__turbot .plats__turbot__st, .conteneur1 .plats .plats__turbot .desserts__PB__st, .conteneur1 .plats .plats__turbot .desserts__macaron__st, .conteneur1 .plats .plats__turbot .desserts__mousse__st, .conteneur1 .plats .desserts__PB .entree__escargot__st, .conteneur1 .plats .desserts__PB .entree__foie__st, .conteneur1 .plats .desserts__PB .entree__oeuf__st, .conteneur1 .plats .desserts__PB .plats__filet__st, .conteneur1 .plats .desserts__PB .plats__parmentier__st, .conteneur1 .plats .desserts__PB .plats__turbot__st, .conteneur1 .plats .desserts__PB .desserts__PB__st, .conteneur1 .plats .desserts__PB .desserts__macaron__st, .conteneur1 .plats .desserts__PB .desserts__mousse__st, .conteneur1 .plats .desserts__macaron .entree__escargot__st, .conteneur1 .plats .desserts__macaron .entree__foie__st, .conteneur1 .plats .desserts__macaron .entree__oeuf__st, .conteneur1 .plats .desserts__macaron .plats__filet__st, .conteneur1 .plats .desserts__macaron .plats__parmentier__st, .conteneur1 .plats .desserts__macaron .plats__turbot__st, .conteneur1 .plats .desserts__macaron .desserts__PB__st, .conteneur1 .plats .desserts__macaron .desserts__macaron__st, .conteneur1 .plats .desserts__macaron .desserts__mousse__st, .conteneur1 .plats .desserts__mousse .entree__escargot__st, .conteneur1 .plats .desserts__mousse .entree__foie__st, .conteneur1 .plats .desserts__mousse .entree__oeuf__st, .conteneur1 .plats .desserts__mousse .plats__filet__st, .conteneur1 .plats .desserts__mousse .plats__parmentier__st, .conteneur1 .plats .desserts__mousse .plats__turbot__st, .conteneur1 .plats .desserts__mousse .desserts__PB__st, .conteneur1 .plats .desserts__mousse .desserts__macaron__st, .conteneur1 .plats .desserts__mousse .desserts__mousse__st, .conteneur1 .desserts .entree__escargot .entree__escargot__st, .conteneur1 .desserts .entree__escargot .entree__foie__st, .conteneur1 .desserts .entree__escargot .entree__oeuf__st, .conteneur1 .desserts .entree__escargot .plats__filet__st, .conteneur1 .desserts .entree__escargot .plats__parmentier__st, .conteneur1 .desserts .entree__escargot .plats__turbot__st, .conteneur1 .desserts .entree__escargot .desserts__PB__st, .conteneur1 .desserts .entree__escargot .desserts__macaron__st, .conteneur1 .desserts .entree__escargot .desserts__mousse__st, .conteneur1 .desserts .entree__foie .entree__escargot__st, .conteneur1 .desserts .entree__foie .entree__foie__st, .conteneur1 .desserts .entree__foie .entree__oeuf__st, .conteneur1 .desserts .entree__foie .plats__filet__st, .conteneur1 .desserts .entree__foie .plats__parmentier__st, .conteneur1 .desserts .entree__foie .plats__turbot__st, .conteneur1 .desserts .entree__foie .desserts__PB__st, .conteneur1 .desserts .entree__foie .desserts__macaron__st, .conteneur1 .desserts .entree__foie .desserts__mousse__st, .conteneur1 .desserts .entree__oeuf .entree__escargot__st, .conteneur1 .desserts .entree__oeuf .entree__foie__st, .conteneur1 .desserts .entree__oeuf .entree__oeuf__st, .conteneur1 .desserts .entree__oeuf .plats__filet__st, .conteneur1 .desserts .entree__oeuf .plats__parmentier__st, .conteneur1 .desserts .entree__oeuf .plats__turbot__st, .conteneur1 .desserts .entree__oeuf .desserts__PB__st, .conteneur1 .desserts .entree__oeuf .desserts__macaron__st, .conteneur1 .desserts .entree__oeuf .desserts__mousse__st, .conteneur1 .desserts .plats__filet .entree__escargot__st, .conteneur1 .desserts .plats__filet .entree__foie__st, .conteneur1 .desserts .plats__filet .entree__oeuf__st, .conteneur1 .desserts .plats__filet .plats__filet__st, .conteneur1 .desserts .plats__filet .plats__parmentier__st, .conteneur1 .desserts .plats__filet .plats__turbot__st, .conteneur1 .desserts .plats__filet .desserts__PB__st, .conteneur1 .desserts .plats__filet .desserts__macaron__st, .conteneur1 .desserts .plats__filet .desserts__mousse__st, .conteneur1 .desserts .plats__parmentier .entree__escargot__st, .conteneur1 .desserts .plats__parmentier .entree__foie__st, .conteneur1 .desserts .plats__parmentier .entree__oeuf__st, .conteneur1 .desserts .plats__parmentier .plats__filet__st, .conteneur1 .desserts .plats__parmentier .plats__parmentier__st, .conteneur1 .desserts .plats__parmentier .plats__turbot__st, .conteneur1 .desserts .plats__parmentier .desserts__PB__st, .conteneur1 .desserts .plats__parmentier .desserts__macaron__st, .conteneur1 .desserts .plats__parmentier .desserts__mousse__st, .conteneur1 .desserts .plats__turbot .entree__escargot__st, .conteneur1 .desserts .plats__turbot .entree__foie__st, .conteneur1 .desserts .plats__turbot .entree__oeuf__st, .conteneur1 .desserts .plats__turbot .plats__filet__st, .conteneur1 .desserts .plats__turbot .plats__parmentier__st, .conteneur1 .desserts .plats__turbot .plats__turbot__st, .conteneur1 .desserts .plats__turbot .desserts__PB__st, .conteneur1 .desserts .plats__turbot .desserts__macaron__st, .conteneur1 .desserts .plats__turbot .desserts__mousse__st, .conteneur1 .desserts .desserts__PB .entree__escargot__st, .conteneur1 .desserts .desserts__PB .entree__foie__st, .conteneur1 .desserts .desserts__PB .entree__oeuf__st, .conteneur1 .desserts .desserts__PB .plats__filet__st, .conteneur1 .desserts .desserts__PB .plats__parmentier__st, .conteneur1 .desserts .desserts__PB .plats__turbot__st, .conteneur1 .desserts .desserts__PB .desserts__PB__st, .conteneur1 .desserts .desserts__PB .desserts__macaron__st, .conteneur1 .desserts .desserts__PB .desserts__mousse__st, .conteneur1 .desserts .desserts__macaron .entree__escargot__st, .conteneur1 .desserts .desserts__macaron .entree__foie__st, .conteneur1 .desserts .desserts__macaron .entree__oeuf__st, .conteneur1 .desserts .desserts__macaron .plats__filet__st, .conteneur1 .desserts .desserts__macaron .plats__parmentier__st, .conteneur1 .desserts .desserts__macaron .plats__turbot__st, .conteneur1 .desserts .desserts__macaron .desserts__PB__st, .conteneur1 .desserts .desserts__macaron .desserts__macaron__st, .conteneur1 .desserts .desserts__macaron .desserts__mousse__st, .conteneur1 .desserts .desserts__mousse .entree__escargot__st, .conteneur1 .desserts .desserts__mousse .entree__foie__st, .conteneur1 .desserts .desserts__mousse .entree__oeuf__st, .conteneur1 .desserts .desserts__mousse .plats__filet__st, .conteneur1 .desserts .desserts__mousse .plats__parmentier__st, .conteneur1 .desserts .desserts__mousse .plats__turbot__st, .conteneur1 .desserts .desserts__mousse .desserts__PB__st, .conteneur1 .desserts .desserts__mousse .desserts__macaron__st, .conteneur1 .desserts .desserts__mousse .desserts__mousse__st {
+    width: 90%;
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__st .prix, .conteneur1 .entrees .entree__escargot .entree__foie__st .prix, .conteneur1 .entrees .entree__escargot .entree__oeuf__st .prix, .conteneur1 .entrees .entree__escargot .plats__filet__st .prix, .conteneur1 .entrees .entree__escargot .plats__parmentier__st .prix, .conteneur1 .entrees .entree__escargot .plats__turbot__st .prix, .conteneur1 .entrees .entree__escargot .desserts__PB__st .prix, .conteneur1 .entrees .entree__escargot .desserts__macaron__st .prix, .conteneur1 .entrees .entree__escargot .desserts__mousse__st .prix, .conteneur1 .entrees .entree__foie .entree__escargot__st .prix, .conteneur1 .entrees .entree__foie .entree__foie__st .prix, .conteneur1 .entrees .entree__foie .entree__oeuf__st .prix, .conteneur1 .entrees .entree__foie .plats__filet__st .prix, .conteneur1 .entrees .entree__foie .plats__parmentier__st .prix, .conteneur1 .entrees .entree__foie .plats__turbot__st .prix, .conteneur1 .entrees .entree__foie .desserts__PB__st .prix, .conteneur1 .entrees .entree__foie .desserts__macaron__st .prix, .conteneur1 .entrees .entree__foie .desserts__mousse__st .prix, .conteneur1 .entrees .entree__oeuf .entree__escargot__st .prix, .conteneur1 .entrees .entree__oeuf .entree__foie__st .prix, .conteneur1 .entrees .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .entrees .entree__oeuf .plats__filet__st .prix, .conteneur1 .entrees .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .entrees .entree__oeuf .plats__turbot__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__PB__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .entrees .plats__filet .entree__escargot__st .prix, .conteneur1 .entrees .plats__filet .entree__foie__st .prix, .conteneur1 .entrees .plats__filet .entree__oeuf__st .prix, .conteneur1 .entrees .plats__filet .plats__filet__st .prix, .conteneur1 .entrees .plats__filet .plats__parmentier__st .prix, .conteneur1 .entrees .plats__filet .plats__turbot__st .prix, .conteneur1 .entrees .plats__filet .desserts__PB__st .prix, .conteneur1 .entrees .plats__filet .desserts__macaron__st .prix, .conteneur1 .entrees .plats__filet .desserts__mousse__st .prix, .conteneur1 .entrees .plats__parmentier .entree__escargot__st .prix, .conteneur1 .entrees .plats__parmentier .entree__foie__st .prix, .conteneur1 .entrees .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .entrees .plats__parmentier .plats__filet__st .prix, .conteneur1 .entrees .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .entrees .plats__parmentier .plats__turbot__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__PB__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .entrees .plats__turbot .entree__escargot__st .prix, .conteneur1 .entrees .plats__turbot .entree__foie__st .prix, .conteneur1 .entrees .plats__turbot .entree__oeuf__st .prix, .conteneur1 .entrees .plats__turbot .plats__filet__st .prix, .conteneur1 .entrees .plats__turbot .plats__parmentier__st .prix, .conteneur1 .entrees .plats__turbot .plats__turbot__st .prix, .conteneur1 .entrees .plats__turbot .desserts__PB__st .prix, .conteneur1 .entrees .plats__turbot .desserts__macaron__st .prix, .conteneur1 .entrees .plats__turbot .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__PB .entree__escargot__st .prix, .conteneur1 .entrees .desserts__PB .entree__foie__st .prix, .conteneur1 .entrees .desserts__PB .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__PB .plats__filet__st .prix, .conteneur1 .entrees .desserts__PB .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__PB .plats__turbot__st .prix, .conteneur1 .entrees .desserts__PB .desserts__PB__st .prix, .conteneur1 .entrees .desserts__PB .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__PB .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__macaron .entree__escargot__st .prix, .conteneur1 .entrees .desserts__macaron .entree__foie__st .prix, .conteneur1 .entrees .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__macaron .plats__filet__st .prix, .conteneur1 .entrees .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__macaron .plats__turbot__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__PB__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__mousse .entree__escargot__st .prix, .conteneur1 .entrees .desserts__mousse .entree__foie__st .prix, .conteneur1 .entrees .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__mousse .plats__filet__st .prix, .conteneur1 .entrees .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__mousse .plats__turbot__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__PB__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__mousse__st .prix, .conteneur1 .plats .entree__escargot .entree__escargot__st .prix, .conteneur1 .plats .entree__escargot .entree__foie__st .prix, .conteneur1 .plats .entree__escargot .entree__oeuf__st .prix, .conteneur1 .plats .entree__escargot .plats__filet__st .prix, .conteneur1 .plats .entree__escargot .plats__parmentier__st .prix, .conteneur1 .plats .entree__escargot .plats__turbot__st .prix, .conteneur1 .plats .entree__escargot .desserts__PB__st .prix, .conteneur1 .plats .entree__escargot .desserts__macaron__st .prix, .conteneur1 .plats .entree__escargot .desserts__mousse__st .prix, .conteneur1 .plats .entree__foie .entree__escargot__st .prix, .conteneur1 .plats .entree__foie .entree__foie__st .prix, .conteneur1 .plats .entree__foie .entree__oeuf__st .prix, .conteneur1 .plats .entree__foie .plats__filet__st .prix, .conteneur1 .plats .entree__foie .plats__parmentier__st .prix, .conteneur1 .plats .entree__foie .plats__turbot__st .prix, .conteneur1 .plats .entree__foie .desserts__PB__st .prix, .conteneur1 .plats .entree__foie .desserts__macaron__st .prix, .conteneur1 .plats .entree__foie .desserts__mousse__st .prix, .conteneur1 .plats .entree__oeuf .entree__escargot__st .prix, .conteneur1 .plats .entree__oeuf .entree__foie__st .prix, .conteneur1 .plats .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .plats .entree__oeuf .plats__filet__st .prix, .conteneur1 .plats .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .plats .entree__oeuf .plats__turbot__st .prix, .conteneur1 .plats .entree__oeuf .desserts__PB__st .prix, .conteneur1 .plats .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .plats .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .plats .plats__filet .entree__escargot__st .prix, .conteneur1 .plats .plats__filet .entree__foie__st .prix, .conteneur1 .plats .plats__filet .entree__oeuf__st .prix, .conteneur1 .plats .plats__filet .plats__filet__st .prix, .conteneur1 .plats .plats__filet .plats__parmentier__st .prix, .conteneur1 .plats .plats__filet .plats__turbot__st .prix, .conteneur1 .plats .plats__filet .desserts__PB__st .prix, .conteneur1 .plats .plats__filet .desserts__macaron__st .prix, .conteneur1 .plats .plats__filet .desserts__mousse__st .prix, .conteneur1 .plats .plats__parmentier .entree__escargot__st .prix, .conteneur1 .plats .plats__parmentier .entree__foie__st .prix, .conteneur1 .plats .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .plats .plats__parmentier .plats__filet__st .prix, .conteneur1 .plats .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .plats .plats__parmentier .plats__turbot__st .prix, .conteneur1 .plats .plats__parmentier .desserts__PB__st .prix, .conteneur1 .plats .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .plats .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .plats .plats__turbot .entree__escargot__st .prix, .conteneur1 .plats .plats__turbot .entree__foie__st .prix, .conteneur1 .plats .plats__turbot .entree__oeuf__st .prix, .conteneur1 .plats .plats__turbot .plats__filet__st .prix, .conteneur1 .plats .plats__turbot .plats__parmentier__st .prix, .conteneur1 .plats .plats__turbot .plats__turbot__st .prix, .conteneur1 .plats .plats__turbot .desserts__PB__st .prix, .conteneur1 .plats .plats__turbot .desserts__macaron__st .prix, .conteneur1 .plats .plats__turbot .desserts__mousse__st .prix, .conteneur1 .plats .desserts__PB .entree__escargot__st .prix, .conteneur1 .plats .desserts__PB .entree__foie__st .prix, .conteneur1 .plats .desserts__PB .entree__oeuf__st .prix, .conteneur1 .plats .desserts__PB .plats__filet__st .prix, .conteneur1 .plats .desserts__PB .plats__parmentier__st .prix, .conteneur1 .plats .desserts__PB .plats__turbot__st .prix, .conteneur1 .plats .desserts__PB .desserts__PB__st .prix, .conteneur1 .plats .desserts__PB .desserts__macaron__st .prix, .conteneur1 .plats .desserts__PB .desserts__mousse__st .prix, .conteneur1 .plats .desserts__macaron .entree__escargot__st .prix, .conteneur1 .plats .desserts__macaron .entree__foie__st .prix, .conteneur1 .plats .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .plats .desserts__macaron .plats__filet__st .prix, .conteneur1 .plats .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .plats .desserts__macaron .plats__turbot__st .prix, .conteneur1 .plats .desserts__macaron .desserts__PB__st .prix, .conteneur1 .plats .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .plats .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .plats .desserts__mousse .entree__escargot__st .prix, .conteneur1 .plats .desserts__mousse .entree__foie__st .prix, .conteneur1 .plats .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .plats .desserts__mousse .plats__filet__st .prix, .conteneur1 .plats .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .plats .desserts__mousse .plats__turbot__st .prix, .conteneur1 .plats .desserts__mousse .desserts__PB__st .prix, .conteneur1 .plats .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .plats .desserts__mousse .desserts__mousse__st .prix, .conteneur1 .desserts .entree__escargot .entree__escargot__st .prix, .conteneur1 .desserts .entree__escargot .entree__foie__st .prix, .conteneur1 .desserts .entree__escargot .entree__oeuf__st .prix, .conteneur1 .desserts .entree__escargot .plats__filet__st .prix, .conteneur1 .desserts .entree__escargot .plats__parmentier__st .prix, .conteneur1 .desserts .entree__escargot .plats__turbot__st .prix, .conteneur1 .desserts .entree__escargot .desserts__PB__st .prix, .conteneur1 .desserts .entree__escargot .desserts__macaron__st .prix, .conteneur1 .desserts .entree__escargot .desserts__mousse__st .prix, .conteneur1 .desserts .entree__foie .entree__escargot__st .prix, .conteneur1 .desserts .entree__foie .entree__foie__st .prix, .conteneur1 .desserts .entree__foie .entree__oeuf__st .prix, .conteneur1 .desserts .entree__foie .plats__filet__st .prix, .conteneur1 .desserts .entree__foie .plats__parmentier__st .prix, .conteneur1 .desserts .entree__foie .plats__turbot__st .prix, .conteneur1 .desserts .entree__foie .desserts__PB__st .prix, .conteneur1 .desserts .entree__foie .desserts__macaron__st .prix, .conteneur1 .desserts .entree__foie .desserts__mousse__st .prix, .conteneur1 .desserts .entree__oeuf .entree__escargot__st .prix, .conteneur1 .desserts .entree__oeuf .entree__foie__st .prix, .conteneur1 .desserts .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .desserts .entree__oeuf .plats__filet__st .prix, .conteneur1 .desserts .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .desserts .entree__oeuf .plats__turbot__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__PB__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .desserts .plats__filet .entree__escargot__st .prix, .conteneur1 .desserts .plats__filet .entree__foie__st .prix, .conteneur1 .desserts .plats__filet .entree__oeuf__st .prix, .conteneur1 .desserts .plats__filet .plats__filet__st .prix, .conteneur1 .desserts .plats__filet .plats__parmentier__st .prix, .conteneur1 .desserts .plats__filet .plats__turbot__st .prix, .conteneur1 .desserts .plats__filet .desserts__PB__st .prix, .conteneur1 .desserts .plats__filet .desserts__macaron__st .prix, .conteneur1 .desserts .plats__filet .desserts__mousse__st .prix, .conteneur1 .desserts .plats__parmentier .entree__escargot__st .prix, .conteneur1 .desserts .plats__parmentier .entree__foie__st .prix, .conteneur1 .desserts .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .desserts .plats__parmentier .plats__filet__st .prix, .conteneur1 .desserts .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .desserts .plats__parmentier .plats__turbot__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__PB__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .desserts .plats__turbot .entree__escargot__st .prix, .conteneur1 .desserts .plats__turbot .entree__foie__st .prix, .conteneur1 .desserts .plats__turbot .entree__oeuf__st .prix, .conteneur1 .desserts .plats__turbot .plats__filet__st .prix, .conteneur1 .desserts .plats__turbot .plats__parmentier__st .prix, .conteneur1 .desserts .plats__turbot .plats__turbot__st .prix, .conteneur1 .desserts .plats__turbot .desserts__PB__st .prix, .conteneur1 .desserts .plats__turbot .desserts__macaron__st .prix, .conteneur1 .desserts .plats__turbot .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__PB .entree__escargot__st .prix, .conteneur1 .desserts .desserts__PB .entree__foie__st .prix, .conteneur1 .desserts .desserts__PB .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__PB .plats__filet__st .prix, .conteneur1 .desserts .desserts__PB .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__PB .plats__turbot__st .prix, .conteneur1 .desserts .desserts__PB .desserts__PB__st .prix, .conteneur1 .desserts .desserts__PB .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__PB .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__macaron .entree__escargot__st .prix, .conteneur1 .desserts .desserts__macaron .entree__foie__st .prix, .conteneur1 .desserts .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__macaron .plats__filet__st .prix, .conteneur1 .desserts .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__macaron .plats__turbot__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__PB__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__mousse .entree__escargot__st .prix, .conteneur1 .desserts .desserts__mousse .entree__foie__st .prix, .conteneur1 .desserts .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__mousse .plats__filet__st .prix, .conteneur1 .desserts .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__mousse .plats__turbot__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__PB__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__mousse__st .prix {
+    font-family: 'roboto_medium';
+    color: #414141;
+  }
+  .conteneur1 .entrees .entree__escargot h3, .conteneur1 .entrees .entree__foie h3, .conteneur1 .entrees .entree__oeuf h3, .conteneur1 .entrees .plats__filet h3, .conteneur1 .entrees .plats__parmentier h3, .conteneur1 .entrees .plats__turbot h3, .conteneur1 .entrees .desserts__PB h3, .conteneur1 .entrees .desserts__macaron h3, .conteneur1 .entrees .desserts__mousse h3, .conteneur1 .plats .entree__escargot h3, .conteneur1 .plats .entree__foie h3, .conteneur1 .plats .entree__oeuf h3, .conteneur1 .plats .plats__filet h3, .conteneur1 .plats .plats__parmentier h3, .conteneur1 .plats .plats__turbot h3, .conteneur1 .plats .desserts__PB h3, .conteneur1 .plats .desserts__macaron h3, .conteneur1 .plats .desserts__mousse h3, .conteneur1 .desserts .entree__escargot h3, .conteneur1 .desserts .entree__foie h3, .conteneur1 .desserts .entree__oeuf h3, .conteneur1 .desserts .plats__filet h3, .conteneur1 .desserts .plats__parmentier h3, .conteneur1 .desserts .plats__turbot h3, .conteneur1 .desserts .desserts__PB h3, .conteneur1 .desserts .desserts__macaron h3, .conteneur1 .desserts .desserts__mousse h3 {
+    font-size: 15px;
+    font-family: 'roboto_thin';
+    line-height: 0;
+  }
+  .conteneur1 .commander {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .conteneur1 .commander .commander__bouton {
+    color: white;
+    font-size: 16px;
+    width: 50%;
+    height: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px #adadad;
+            box-shadow: 5px 5px 15px #adadad;
+    font-family: 'roboto_medium';
+  }
+  footer {
+    height: 170px;
+    background-color: #414141;
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    line-height: 0;
+    position: relative;
+    margin-top: 0px;
+  }
+  footer h3 {
+    font-size: 16px;
+    font-family: 'roboto_light';
+  }
+  footer .footer__img {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  footer .footer__img img {
+    width: 120px;
+    height: 20px;
+  }
+  footer .footer__restaurant__partenaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__restaurant__partenaire .fa-utensils {
+    margin-right: 10px;
+  }
+  footer .footer__restaurant__partenaire .fa-hands-helping {
+    margin-right: 10px;
+  }
+}
+
+@media all and (min-width: 780px) {
+  .block_page, body {
+    width: 100%;
+    max-width: 1500px;
+    min-width: 1000px;
+    margin: auto;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 85px;
+  }
+  header .fa-arrow-left {
+    margin-left: 30px;
+    margin-right: 70px;
+    color: #414141;
+  }
+  header img {
+    width: 160px;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .background {
+    width: 100%;
+    height: 252px;
+  }
+  .background img {
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 1000px;
+    max-width: 1500px;
+  }
+  .conteneur1 {
+    width: 100%;
+    height: 690px;
+    background-color: white;
+    position: relative;
+    margin: auto;
+    top: 70px;
+    border-radius: 35px 35px 0px 0px;
+    padding-bottom: 130px;
+  }
+  .conteneur1 > a {
+    width: 100%;
+    height: 150px;
+  }
+  .conteneur1 a:visited {
+    color: white;
+  }
+  .conteneur1 .titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+  .conteneur1 .titre h1 {
+    font-family: 'shrikland';
+    font-size: 30px;
+  }
+  .conteneur1 .epd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    padding: 55px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+  }
+  .conteneur1 .entrees, .conteneur1 .plats, .conteneur1 .desserts {
+    width: 45%;
+    height: 270px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 20px;
+  }
+  .conteneur1 .entrees > h2, .conteneur1 .plats > h2, .conteneur1 .desserts > h2 {
+    width: 45px;
+    height: 22px;
+    margin: 0px;
+    font-family: 'roboto_thin';
+    font-size: 17px;
+    border-bottom: 3px solid #99E2D0;
+  }
+  .conteneur1 .entrees .entree__escargot, .conteneur1 .entrees .entree__foie, .conteneur1 .entrees .entree__oeuf, .conteneur1 .entrees .plats__filet, .conteneur1 .entrees .plats__parmentier, .conteneur1 .entrees .plats__turbot, .conteneur1 .entrees .desserts__PB, .conteneur1 .entrees .desserts__macaron, .conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .entree__escargot, .conteneur1 .plats .entree__foie, .conteneur1 .plats .entree__oeuf, .conteneur1 .plats .plats__filet, .conteneur1 .plats .plats__parmentier, .conteneur1 .plats .plats__turbot, .conteneur1 .plats .desserts__PB, .conteneur1 .plats .desserts__macaron, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .entree__escargot, .conteneur1 .desserts .entree__foie, .conteneur1 .desserts .entree__oeuf, .conteneur1 .desserts .plats__filet, .conteneur1 .desserts .plats__parmentier, .conteneur1 .desserts .plats__turbot, .conteneur1 .desserts .desserts__PB, .conteneur1 .desserts .desserts__macaron, .conteneur1 .desserts .desserts__mousse {
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 2px 2px 10px #d8d8d8;
+            box-shadow: 2px 2px 10px #d8d8d8;
+    box-shadow: 2px 2px 10px #d8d8d8;
+    max-width: 540px;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__titre, .conteneur1 .entrees .entree__escargot .entree__foie__titre, .conteneur1 .entrees .entree__escargot .entree__oeuf__titre, .conteneur1 .entrees .entree__escargot .plats__filet__titre, .conteneur1 .entrees .entree__escargot .plats__parmentier__titre, .conteneur1 .entrees .entree__escargot .plats__turbot__titre, .conteneur1 .entrees .entree__escargot .desserts__PB__titre, .conteneur1 .entrees .entree__escargot .desserts__macaron__titre, .conteneur1 .entrees .entree__escargot .desserts__mousse__titre, .conteneur1 .entrees .entree__foie .entree__escargot__titre, .conteneur1 .entrees .entree__foie .entree__foie__titre, .conteneur1 .entrees .entree__foie .entree__oeuf__titre, .conteneur1 .entrees .entree__foie .plats__filet__titre, .conteneur1 .entrees .entree__foie .plats__parmentier__titre, .conteneur1 .entrees .entree__foie .plats__turbot__titre, .conteneur1 .entrees .entree__foie .desserts__PB__titre, .conteneur1 .entrees .entree__foie .desserts__macaron__titre, .conteneur1 .entrees .entree__foie .desserts__mousse__titre, .conteneur1 .entrees .entree__oeuf .entree__escargot__titre, .conteneur1 .entrees .entree__oeuf .entree__foie__titre, .conteneur1 .entrees .entree__oeuf .entree__oeuf__titre, .conteneur1 .entrees .entree__oeuf .plats__filet__titre, .conteneur1 .entrees .entree__oeuf .plats__parmentier__titre, .conteneur1 .entrees .entree__oeuf .plats__turbot__titre, .conteneur1 .entrees .entree__oeuf .desserts__PB__titre, .conteneur1 .entrees .entree__oeuf .desserts__macaron__titre, .conteneur1 .entrees .entree__oeuf .desserts__mousse__titre, .conteneur1 .entrees .plats__filet .entree__escargot__titre, .conteneur1 .entrees .plats__filet .entree__foie__titre, .conteneur1 .entrees .plats__filet .entree__oeuf__titre, .conteneur1 .entrees .plats__filet .plats__filet__titre, .conteneur1 .entrees .plats__filet .plats__parmentier__titre, .conteneur1 .entrees .plats__filet .plats__turbot__titre, .conteneur1 .entrees .plats__filet .desserts__PB__titre, .conteneur1 .entrees .plats__filet .desserts__macaron__titre, .conteneur1 .entrees .plats__filet .desserts__mousse__titre, .conteneur1 .entrees .plats__parmentier .entree__escargot__titre, .conteneur1 .entrees .plats__parmentier .entree__foie__titre, .conteneur1 .entrees .plats__parmentier .entree__oeuf__titre, .conteneur1 .entrees .plats__parmentier .plats__filet__titre, .conteneur1 .entrees .plats__parmentier .plats__parmentier__titre, .conteneur1 .entrees .plats__parmentier .plats__turbot__titre, .conteneur1 .entrees .plats__parmentier .desserts__PB__titre, .conteneur1 .entrees .plats__parmentier .desserts__macaron__titre, .conteneur1 .entrees .plats__parmentier .desserts__mousse__titre, .conteneur1 .entrees .plats__turbot .entree__escargot__titre, .conteneur1 .entrees .plats__turbot .entree__foie__titre, .conteneur1 .entrees .plats__turbot .entree__oeuf__titre, .conteneur1 .entrees .plats__turbot .plats__filet__titre, .conteneur1 .entrees .plats__turbot .plats__parmentier__titre, .conteneur1 .entrees .plats__turbot .plats__turbot__titre, .conteneur1 .entrees .plats__turbot .desserts__PB__titre, .conteneur1 .entrees .plats__turbot .desserts__macaron__titre, .conteneur1 .entrees .plats__turbot .desserts__mousse__titre, .conteneur1 .entrees .desserts__PB .entree__escargot__titre, .conteneur1 .entrees .desserts__PB .entree__foie__titre, .conteneur1 .entrees .desserts__PB .entree__oeuf__titre, .conteneur1 .entrees .desserts__PB .plats__filet__titre, .conteneur1 .entrees .desserts__PB .plats__parmentier__titre, .conteneur1 .entrees .desserts__PB .plats__turbot__titre, .conteneur1 .entrees .desserts__PB .desserts__PB__titre, .conteneur1 .entrees .desserts__PB .desserts__macaron__titre, .conteneur1 .entrees .desserts__PB .desserts__mousse__titre, .conteneur1 .entrees .desserts__macaron .entree__escargot__titre, .conteneur1 .entrees .desserts__macaron .entree__foie__titre, .conteneur1 .entrees .desserts__macaron .entree__oeuf__titre, .conteneur1 .entrees .desserts__macaron .plats__filet__titre, .conteneur1 .entrees .desserts__macaron .plats__parmentier__titre, .conteneur1 .entrees .desserts__macaron .plats__turbot__titre, .conteneur1 .entrees .desserts__macaron .desserts__PB__titre, .conteneur1 .entrees .desserts__macaron .desserts__macaron__titre, .conteneur1 .entrees .desserts__macaron .desserts__mousse__titre, .conteneur1 .entrees .desserts__mousse .entree__escargot__titre, .conteneur1 .entrees .desserts__mousse .entree__foie__titre, .conteneur1 .entrees .desserts__mousse .entree__oeuf__titre, .conteneur1 .entrees .desserts__mousse .plats__filet__titre, .conteneur1 .entrees .desserts__mousse .plats__parmentier__titre, .conteneur1 .entrees .desserts__mousse .plats__turbot__titre, .conteneur1 .entrees .desserts__mousse .desserts__PB__titre, .conteneur1 .entrees .desserts__mousse .desserts__macaron__titre, .conteneur1 .entrees .desserts__mousse .desserts__mousse__titre, .conteneur1 .plats .entree__escargot .entree__escargot__titre, .conteneur1 .plats .entree__escargot .entree__foie__titre, .conteneur1 .plats .entree__escargot .entree__oeuf__titre, .conteneur1 .plats .entree__escargot .plats__filet__titre, .conteneur1 .plats .entree__escargot .plats__parmentier__titre, .conteneur1 .plats .entree__escargot .plats__turbot__titre, .conteneur1 .plats .entree__escargot .desserts__PB__titre, .conteneur1 .plats .entree__escargot .desserts__macaron__titre, .conteneur1 .plats .entree__escargot .desserts__mousse__titre, .conteneur1 .plats .entree__foie .entree__escargot__titre, .conteneur1 .plats .entree__foie .entree__foie__titre, .conteneur1 .plats .entree__foie .entree__oeuf__titre, .conteneur1 .plats .entree__foie .plats__filet__titre, .conteneur1 .plats .entree__foie .plats__parmentier__titre, .conteneur1 .plats .entree__foie .plats__turbot__titre, .conteneur1 .plats .entree__foie .desserts__PB__titre, .conteneur1 .plats .entree__foie .desserts__macaron__titre, .conteneur1 .plats .entree__foie .desserts__mousse__titre, .conteneur1 .plats .entree__oeuf .entree__escargot__titre, .conteneur1 .plats .entree__oeuf .entree__foie__titre, .conteneur1 .plats .entree__oeuf .entree__oeuf__titre, .conteneur1 .plats .entree__oeuf .plats__filet__titre, .conteneur1 .plats .entree__oeuf .plats__parmentier__titre, .conteneur1 .plats .entree__oeuf .plats__turbot__titre, .conteneur1 .plats .entree__oeuf .desserts__PB__titre, .conteneur1 .plats .entree__oeuf .desserts__macaron__titre, .conteneur1 .plats .entree__oeuf .desserts__mousse__titre, .conteneur1 .plats .plats__filet .entree__escargot__titre, .conteneur1 .plats .plats__filet .entree__foie__titre, .conteneur1 .plats .plats__filet .entree__oeuf__titre, .conteneur1 .plats .plats__filet .plats__filet__titre, .conteneur1 .plats .plats__filet .plats__parmentier__titre, .conteneur1 .plats .plats__filet .plats__turbot__titre, .conteneur1 .plats .plats__filet .desserts__PB__titre, .conteneur1 .plats .plats__filet .desserts__macaron__titre, .conteneur1 .plats .plats__filet .desserts__mousse__titre, .conteneur1 .plats .plats__parmentier .entree__escargot__titre, .conteneur1 .plats .plats__parmentier .entree__foie__titre, .conteneur1 .plats .plats__parmentier .entree__oeuf__titre, .conteneur1 .plats .plats__parmentier .plats__filet__titre, .conteneur1 .plats .plats__parmentier .plats__parmentier__titre, .conteneur1 .plats .plats__parmentier .plats__turbot__titre, .conteneur1 .plats .plats__parmentier .desserts__PB__titre, .conteneur1 .plats .plats__parmentier .desserts__macaron__titre, .conteneur1 .plats .plats__parmentier .desserts__mousse__titre, .conteneur1 .plats .plats__turbot .entree__escargot__titre, .conteneur1 .plats .plats__turbot .entree__foie__titre, .conteneur1 .plats .plats__turbot .entree__oeuf__titre, .conteneur1 .plats .plats__turbot .plats__filet__titre, .conteneur1 .plats .plats__turbot .plats__parmentier__titre, .conteneur1 .plats .plats__turbot .plats__turbot__titre, .conteneur1 .plats .plats__turbot .desserts__PB__titre, .conteneur1 .plats .plats__turbot .desserts__macaron__titre, .conteneur1 .plats .plats__turbot .desserts__mousse__titre, .conteneur1 .plats .desserts__PB .entree__escargot__titre, .conteneur1 .plats .desserts__PB .entree__foie__titre, .conteneur1 .plats .desserts__PB .entree__oeuf__titre, .conteneur1 .plats .desserts__PB .plats__filet__titre, .conteneur1 .plats .desserts__PB .plats__parmentier__titre, .conteneur1 .plats .desserts__PB .plats__turbot__titre, .conteneur1 .plats .desserts__PB .desserts__PB__titre, .conteneur1 .plats .desserts__PB .desserts__macaron__titre, .conteneur1 .plats .desserts__PB .desserts__mousse__titre, .conteneur1 .plats .desserts__macaron .entree__escargot__titre, .conteneur1 .plats .desserts__macaron .entree__foie__titre, .conteneur1 .plats .desserts__macaron .entree__oeuf__titre, .conteneur1 .plats .desserts__macaron .plats__filet__titre, .conteneur1 .plats .desserts__macaron .plats__parmentier__titre, .conteneur1 .plats .desserts__macaron .plats__turbot__titre, .conteneur1 .plats .desserts__macaron .desserts__PB__titre, .conteneur1 .plats .desserts__macaron .desserts__macaron__titre, .conteneur1 .plats .desserts__macaron .desserts__mousse__titre, .conteneur1 .plats .desserts__mousse .entree__escargot__titre, .conteneur1 .plats .desserts__mousse .entree__foie__titre, .conteneur1 .plats .desserts__mousse .entree__oeuf__titre, .conteneur1 .plats .desserts__mousse .plats__filet__titre, .conteneur1 .plats .desserts__mousse .plats__parmentier__titre, .conteneur1 .plats .desserts__mousse .plats__turbot__titre, .conteneur1 .plats .desserts__mousse .desserts__PB__titre, .conteneur1 .plats .desserts__mousse .desserts__macaron__titre, .conteneur1 .plats .desserts__mousse .desserts__mousse__titre, .conteneur1 .desserts .entree__escargot .entree__escargot__titre, .conteneur1 .desserts .entree__escargot .entree__foie__titre, .conteneur1 .desserts .entree__escargot .entree__oeuf__titre, .conteneur1 .desserts .entree__escargot .plats__filet__titre, .conteneur1 .desserts .entree__escargot .plats__parmentier__titre, .conteneur1 .desserts .entree__escargot .plats__turbot__titre, .conteneur1 .desserts .entree__escargot .desserts__PB__titre, .conteneur1 .desserts .entree__escargot .desserts__macaron__titre, .conteneur1 .desserts .entree__escargot .desserts__mousse__titre, .conteneur1 .desserts .entree__foie .entree__escargot__titre, .conteneur1 .desserts .entree__foie .entree__foie__titre, .conteneur1 .desserts .entree__foie .entree__oeuf__titre, .conteneur1 .desserts .entree__foie .plats__filet__titre, .conteneur1 .desserts .entree__foie .plats__parmentier__titre, .conteneur1 .desserts .entree__foie .plats__turbot__titre, .conteneur1 .desserts .entree__foie .desserts__PB__titre, .conteneur1 .desserts .entree__foie .desserts__macaron__titre, .conteneur1 .desserts .entree__foie .desserts__mousse__titre, .conteneur1 .desserts .entree__oeuf .entree__escargot__titre, .conteneur1 .desserts .entree__oeuf .entree__foie__titre, .conteneur1 .desserts .entree__oeuf .entree__oeuf__titre, .conteneur1 .desserts .entree__oeuf .plats__filet__titre, .conteneur1 .desserts .entree__oeuf .plats__parmentier__titre, .conteneur1 .desserts .entree__oeuf .plats__turbot__titre, .conteneur1 .desserts .entree__oeuf .desserts__PB__titre, .conteneur1 .desserts .entree__oeuf .desserts__macaron__titre, .conteneur1 .desserts .entree__oeuf .desserts__mousse__titre, .conteneur1 .desserts .plats__filet .entree__escargot__titre, .conteneur1 .desserts .plats__filet .entree__foie__titre, .conteneur1 .desserts .plats__filet .entree__oeuf__titre, .conteneur1 .desserts .plats__filet .plats__filet__titre, .conteneur1 .desserts .plats__filet .plats__parmentier__titre, .conteneur1 .desserts .plats__filet .plats__turbot__titre, .conteneur1 .desserts .plats__filet .desserts__PB__titre, .conteneur1 .desserts .plats__filet .desserts__macaron__titre, .conteneur1 .desserts .plats__filet .desserts__mousse__titre, .conteneur1 .desserts .plats__parmentier .entree__escargot__titre, .conteneur1 .desserts .plats__parmentier .entree__foie__titre, .conteneur1 .desserts .plats__parmentier .entree__oeuf__titre, .conteneur1 .desserts .plats__parmentier .plats__filet__titre, .conteneur1 .desserts .plats__parmentier .plats__parmentier__titre, .conteneur1 .desserts .plats__parmentier .plats__turbot__titre, .conteneur1 .desserts .plats__parmentier .desserts__PB__titre, .conteneur1 .desserts .plats__parmentier .desserts__macaron__titre, .conteneur1 .desserts .plats__parmentier .desserts__mousse__titre, .conteneur1 .desserts .plats__turbot .entree__escargot__titre, .conteneur1 .desserts .plats__turbot .entree__foie__titre, .conteneur1 .desserts .plats__turbot .entree__oeuf__titre, .conteneur1 .desserts .plats__turbot .plats__filet__titre, .conteneur1 .desserts .plats__turbot .plats__parmentier__titre, .conteneur1 .desserts .plats__turbot .plats__turbot__titre, .conteneur1 .desserts .plats__turbot .desserts__PB__titre, .conteneur1 .desserts .plats__turbot .desserts__macaron__titre, .conteneur1 .desserts .plats__turbot .desserts__mousse__titre, .conteneur1 .desserts .desserts__PB .entree__escargot__titre, .conteneur1 .desserts .desserts__PB .entree__foie__titre, .conteneur1 .desserts .desserts__PB .entree__oeuf__titre, .conteneur1 .desserts .desserts__PB .plats__filet__titre, .conteneur1 .desserts .desserts__PB .plats__parmentier__titre, .conteneur1 .desserts .desserts__PB .plats__turbot__titre, .conteneur1 .desserts .desserts__PB .desserts__PB__titre, .conteneur1 .desserts .desserts__PB .desserts__macaron__titre, .conteneur1 .desserts .desserts__PB .desserts__mousse__titre, .conteneur1 .desserts .desserts__macaron .entree__escargot__titre, .conteneur1 .desserts .desserts__macaron .entree__foie__titre, .conteneur1 .desserts .desserts__macaron .entree__oeuf__titre, .conteneur1 .desserts .desserts__macaron .plats__filet__titre, .conteneur1 .desserts .desserts__macaron .plats__parmentier__titre, .conteneur1 .desserts .desserts__macaron .plats__turbot__titre, .conteneur1 .desserts .desserts__macaron .desserts__PB__titre, .conteneur1 .desserts .desserts__macaron .desserts__macaron__titre, .conteneur1 .desserts .desserts__macaron .desserts__mousse__titre, .conteneur1 .desserts .desserts__mousse .entree__escargot__titre, .conteneur1 .desserts .desserts__mousse .entree__foie__titre, .conteneur1 .desserts .desserts__mousse .entree__oeuf__titre, .conteneur1 .desserts .desserts__mousse .plats__filet__titre, .conteneur1 .desserts .desserts__mousse .plats__parmentier__titre, .conteneur1 .desserts .desserts__mousse .plats__turbot__titre, .conteneur1 .desserts .desserts__mousse .desserts__PB__titre, .conteneur1 .desserts .desserts__mousse .desserts__macaron__titre, .conteneur1 .desserts .desserts__mousse .desserts__mousse__titre {
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'roboto_medium';
+    font-size: 18px;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__st, .conteneur1 .entrees .entree__escargot .entree__foie__st, .conteneur1 .entrees .entree__escargot .entree__oeuf__st, .conteneur1 .entrees .entree__escargot .plats__filet__st, .conteneur1 .entrees .entree__escargot .plats__parmentier__st, .conteneur1 .entrees .entree__escargot .plats__turbot__st, .conteneur1 .entrees .entree__escargot .desserts__PB__st, .conteneur1 .entrees .entree__escargot .desserts__macaron__st, .conteneur1 .entrees .entree__escargot .desserts__mousse__st, .conteneur1 .entrees .entree__foie .entree__escargot__st, .conteneur1 .entrees .entree__foie .entree__foie__st, .conteneur1 .entrees .entree__foie .entree__oeuf__st, .conteneur1 .entrees .entree__foie .plats__filet__st, .conteneur1 .entrees .entree__foie .plats__parmentier__st, .conteneur1 .entrees .entree__foie .plats__turbot__st, .conteneur1 .entrees .entree__foie .desserts__PB__st, .conteneur1 .entrees .entree__foie .desserts__macaron__st, .conteneur1 .entrees .entree__foie .desserts__mousse__st, .conteneur1 .entrees .entree__oeuf .entree__escargot__st, .conteneur1 .entrees .entree__oeuf .entree__foie__st, .conteneur1 .entrees .entree__oeuf .entree__oeuf__st, .conteneur1 .entrees .entree__oeuf .plats__filet__st, .conteneur1 .entrees .entree__oeuf .plats__parmentier__st, .conteneur1 .entrees .entree__oeuf .plats__turbot__st, .conteneur1 .entrees .entree__oeuf .desserts__PB__st, .conteneur1 .entrees .entree__oeuf .desserts__macaron__st, .conteneur1 .entrees .entree__oeuf .desserts__mousse__st, .conteneur1 .entrees .plats__filet .entree__escargot__st, .conteneur1 .entrees .plats__filet .entree__foie__st, .conteneur1 .entrees .plats__filet .entree__oeuf__st, .conteneur1 .entrees .plats__filet .plats__filet__st, .conteneur1 .entrees .plats__filet .plats__parmentier__st, .conteneur1 .entrees .plats__filet .plats__turbot__st, .conteneur1 .entrees .plats__filet .desserts__PB__st, .conteneur1 .entrees .plats__filet .desserts__macaron__st, .conteneur1 .entrees .plats__filet .desserts__mousse__st, .conteneur1 .entrees .plats__parmentier .entree__escargot__st, .conteneur1 .entrees .plats__parmentier .entree__foie__st, .conteneur1 .entrees .plats__parmentier .entree__oeuf__st, .conteneur1 .entrees .plats__parmentier .plats__filet__st, .conteneur1 .entrees .plats__parmentier .plats__parmentier__st, .conteneur1 .entrees .plats__parmentier .plats__turbot__st, .conteneur1 .entrees .plats__parmentier .desserts__PB__st, .conteneur1 .entrees .plats__parmentier .desserts__macaron__st, .conteneur1 .entrees .plats__parmentier .desserts__mousse__st, .conteneur1 .entrees .plats__turbot .entree__escargot__st, .conteneur1 .entrees .plats__turbot .entree__foie__st, .conteneur1 .entrees .plats__turbot .entree__oeuf__st, .conteneur1 .entrees .plats__turbot .plats__filet__st, .conteneur1 .entrees .plats__turbot .plats__parmentier__st, .conteneur1 .entrees .plats__turbot .plats__turbot__st, .conteneur1 .entrees .plats__turbot .desserts__PB__st, .conteneur1 .entrees .plats__turbot .desserts__macaron__st, .conteneur1 .entrees .plats__turbot .desserts__mousse__st, .conteneur1 .entrees .desserts__PB .entree__escargot__st, .conteneur1 .entrees .desserts__PB .entree__foie__st, .conteneur1 .entrees .desserts__PB .entree__oeuf__st, .conteneur1 .entrees .desserts__PB .plats__filet__st, .conteneur1 .entrees .desserts__PB .plats__parmentier__st, .conteneur1 .entrees .desserts__PB .plats__turbot__st, .conteneur1 .entrees .desserts__PB .desserts__PB__st, .conteneur1 .entrees .desserts__PB .desserts__macaron__st, .conteneur1 .entrees .desserts__PB .desserts__mousse__st, .conteneur1 .entrees .desserts__macaron .entree__escargot__st, .conteneur1 .entrees .desserts__macaron .entree__foie__st, .conteneur1 .entrees .desserts__macaron .entree__oeuf__st, .conteneur1 .entrees .desserts__macaron .plats__filet__st, .conteneur1 .entrees .desserts__macaron .plats__parmentier__st, .conteneur1 .entrees .desserts__macaron .plats__turbot__st, .conteneur1 .entrees .desserts__macaron .desserts__PB__st, .conteneur1 .entrees .desserts__macaron .desserts__macaron__st, .conteneur1 .entrees .desserts__macaron .desserts__mousse__st, .conteneur1 .entrees .desserts__mousse .entree__escargot__st, .conteneur1 .entrees .desserts__mousse .entree__foie__st, .conteneur1 .entrees .desserts__mousse .entree__oeuf__st, .conteneur1 .entrees .desserts__mousse .plats__filet__st, .conteneur1 .entrees .desserts__mousse .plats__parmentier__st, .conteneur1 .entrees .desserts__mousse .plats__turbot__st, .conteneur1 .entrees .desserts__mousse .desserts__PB__st, .conteneur1 .entrees .desserts__mousse .desserts__macaron__st, .conteneur1 .entrees .desserts__mousse .desserts__mousse__st, .conteneur1 .plats .entree__escargot .entree__escargot__st, .conteneur1 .plats .entree__escargot .entree__foie__st, .conteneur1 .plats .entree__escargot .entree__oeuf__st, .conteneur1 .plats .entree__escargot .plats__filet__st, .conteneur1 .plats .entree__escargot .plats__parmentier__st, .conteneur1 .plats .entree__escargot .plats__turbot__st, .conteneur1 .plats .entree__escargot .desserts__PB__st, .conteneur1 .plats .entree__escargot .desserts__macaron__st, .conteneur1 .plats .entree__escargot .desserts__mousse__st, .conteneur1 .plats .entree__foie .entree__escargot__st, .conteneur1 .plats .entree__foie .entree__foie__st, .conteneur1 .plats .entree__foie .entree__oeuf__st, .conteneur1 .plats .entree__foie .plats__filet__st, .conteneur1 .plats .entree__foie .plats__parmentier__st, .conteneur1 .plats .entree__foie .plats__turbot__st, .conteneur1 .plats .entree__foie .desserts__PB__st, .conteneur1 .plats .entree__foie .desserts__macaron__st, .conteneur1 .plats .entree__foie .desserts__mousse__st, .conteneur1 .plats .entree__oeuf .entree__escargot__st, .conteneur1 .plats .entree__oeuf .entree__foie__st, .conteneur1 .plats .entree__oeuf .entree__oeuf__st, .conteneur1 .plats .entree__oeuf .plats__filet__st, .conteneur1 .plats .entree__oeuf .plats__parmentier__st, .conteneur1 .plats .entree__oeuf .plats__turbot__st, .conteneur1 .plats .entree__oeuf .desserts__PB__st, .conteneur1 .plats .entree__oeuf .desserts__macaron__st, .conteneur1 .plats .entree__oeuf .desserts__mousse__st, .conteneur1 .plats .plats__filet .entree__escargot__st, .conteneur1 .plats .plats__filet .entree__foie__st, .conteneur1 .plats .plats__filet .entree__oeuf__st, .conteneur1 .plats .plats__filet .plats__filet__st, .conteneur1 .plats .plats__filet .plats__parmentier__st, .conteneur1 .plats .plats__filet .plats__turbot__st, .conteneur1 .plats .plats__filet .desserts__PB__st, .conteneur1 .plats .plats__filet .desserts__macaron__st, .conteneur1 .plats .plats__filet .desserts__mousse__st, .conteneur1 .plats .plats__parmentier .entree__escargot__st, .conteneur1 .plats .plats__parmentier .entree__foie__st, .conteneur1 .plats .plats__parmentier .entree__oeuf__st, .conteneur1 .plats .plats__parmentier .plats__filet__st, .conteneur1 .plats .plats__parmentier .plats__parmentier__st, .conteneur1 .plats .plats__parmentier .plats__turbot__st, .conteneur1 .plats .plats__parmentier .desserts__PB__st, .conteneur1 .plats .plats__parmentier .desserts__macaron__st, .conteneur1 .plats .plats__parmentier .desserts__mousse__st, .conteneur1 .plats .plats__turbot .entree__escargot__st, .conteneur1 .plats .plats__turbot .entree__foie__st, .conteneur1 .plats .plats__turbot .entree__oeuf__st, .conteneur1 .plats .plats__turbot .plats__filet__st, .conteneur1 .plats .plats__turbot .plats__parmentier__st, .conteneur1 .plats .plats__turbot .plats__turbot__st, .conteneur1 .plats .plats__turbot .desserts__PB__st, .conteneur1 .plats .plats__turbot .desserts__macaron__st, .conteneur1 .plats .plats__turbot .desserts__mousse__st, .conteneur1 .plats .desserts__PB .entree__escargot__st, .conteneur1 .plats .desserts__PB .entree__foie__st, .conteneur1 .plats .desserts__PB .entree__oeuf__st, .conteneur1 .plats .desserts__PB .plats__filet__st, .conteneur1 .plats .desserts__PB .plats__parmentier__st, .conteneur1 .plats .desserts__PB .plats__turbot__st, .conteneur1 .plats .desserts__PB .desserts__PB__st, .conteneur1 .plats .desserts__PB .desserts__macaron__st, .conteneur1 .plats .desserts__PB .desserts__mousse__st, .conteneur1 .plats .desserts__macaron .entree__escargot__st, .conteneur1 .plats .desserts__macaron .entree__foie__st, .conteneur1 .plats .desserts__macaron .entree__oeuf__st, .conteneur1 .plats .desserts__macaron .plats__filet__st, .conteneur1 .plats .desserts__macaron .plats__parmentier__st, .conteneur1 .plats .desserts__macaron .plats__turbot__st, .conteneur1 .plats .desserts__macaron .desserts__PB__st, .conteneur1 .plats .desserts__macaron .desserts__macaron__st, .conteneur1 .plats .desserts__macaron .desserts__mousse__st, .conteneur1 .plats .desserts__mousse .entree__escargot__st, .conteneur1 .plats .desserts__mousse .entree__foie__st, .conteneur1 .plats .desserts__mousse .entree__oeuf__st, .conteneur1 .plats .desserts__mousse .plats__filet__st, .conteneur1 .plats .desserts__mousse .plats__parmentier__st, .conteneur1 .plats .desserts__mousse .plats__turbot__st, .conteneur1 .plats .desserts__mousse .desserts__PB__st, .conteneur1 .plats .desserts__mousse .desserts__macaron__st, .conteneur1 .plats .desserts__mousse .desserts__mousse__st, .conteneur1 .desserts .entree__escargot .entree__escargot__st, .conteneur1 .desserts .entree__escargot .entree__foie__st, .conteneur1 .desserts .entree__escargot .entree__oeuf__st, .conteneur1 .desserts .entree__escargot .plats__filet__st, .conteneur1 .desserts .entree__escargot .plats__parmentier__st, .conteneur1 .desserts .entree__escargot .plats__turbot__st, .conteneur1 .desserts .entree__escargot .desserts__PB__st, .conteneur1 .desserts .entree__escargot .desserts__macaron__st, .conteneur1 .desserts .entree__escargot .desserts__mousse__st, .conteneur1 .desserts .entree__foie .entree__escargot__st, .conteneur1 .desserts .entree__foie .entree__foie__st, .conteneur1 .desserts .entree__foie .entree__oeuf__st, .conteneur1 .desserts .entree__foie .plats__filet__st, .conteneur1 .desserts .entree__foie .plats__parmentier__st, .conteneur1 .desserts .entree__foie .plats__turbot__st, .conteneur1 .desserts .entree__foie .desserts__PB__st, .conteneur1 .desserts .entree__foie .desserts__macaron__st, .conteneur1 .desserts .entree__foie .desserts__mousse__st, .conteneur1 .desserts .entree__oeuf .entree__escargot__st, .conteneur1 .desserts .entree__oeuf .entree__foie__st, .conteneur1 .desserts .entree__oeuf .entree__oeuf__st, .conteneur1 .desserts .entree__oeuf .plats__filet__st, .conteneur1 .desserts .entree__oeuf .plats__parmentier__st, .conteneur1 .desserts .entree__oeuf .plats__turbot__st, .conteneur1 .desserts .entree__oeuf .desserts__PB__st, .conteneur1 .desserts .entree__oeuf .desserts__macaron__st, .conteneur1 .desserts .entree__oeuf .desserts__mousse__st, .conteneur1 .desserts .plats__filet .entree__escargot__st, .conteneur1 .desserts .plats__filet .entree__foie__st, .conteneur1 .desserts .plats__filet .entree__oeuf__st, .conteneur1 .desserts .plats__filet .plats__filet__st, .conteneur1 .desserts .plats__filet .plats__parmentier__st, .conteneur1 .desserts .plats__filet .plats__turbot__st, .conteneur1 .desserts .plats__filet .desserts__PB__st, .conteneur1 .desserts .plats__filet .desserts__macaron__st, .conteneur1 .desserts .plats__filet .desserts__mousse__st, .conteneur1 .desserts .plats__parmentier .entree__escargot__st, .conteneur1 .desserts .plats__parmentier .entree__foie__st, .conteneur1 .desserts .plats__parmentier .entree__oeuf__st, .conteneur1 .desserts .plats__parmentier .plats__filet__st, .conteneur1 .desserts .plats__parmentier .plats__parmentier__st, .conteneur1 .desserts .plats__parmentier .plats__turbot__st, .conteneur1 .desserts .plats__parmentier .desserts__PB__st, .conteneur1 .desserts .plats__parmentier .desserts__macaron__st, .conteneur1 .desserts .plats__parmentier .desserts__mousse__st, .conteneur1 .desserts .plats__turbot .entree__escargot__st, .conteneur1 .desserts .plats__turbot .entree__foie__st, .conteneur1 .desserts .plats__turbot .entree__oeuf__st, .conteneur1 .desserts .plats__turbot .plats__filet__st, .conteneur1 .desserts .plats__turbot .plats__parmentier__st, .conteneur1 .desserts .plats__turbot .plats__turbot__st, .conteneur1 .desserts .plats__turbot .desserts__PB__st, .conteneur1 .desserts .plats__turbot .desserts__macaron__st, .conteneur1 .desserts .plats__turbot .desserts__mousse__st, .conteneur1 .desserts .desserts__PB .entree__escargot__st, .conteneur1 .desserts .desserts__PB .entree__foie__st, .conteneur1 .desserts .desserts__PB .entree__oeuf__st, .conteneur1 .desserts .desserts__PB .plats__filet__st, .conteneur1 .desserts .desserts__PB .plats__parmentier__st, .conteneur1 .desserts .desserts__PB .plats__turbot__st, .conteneur1 .desserts .desserts__PB .desserts__PB__st, .conteneur1 .desserts .desserts__PB .desserts__macaron__st, .conteneur1 .desserts .desserts__PB .desserts__mousse__st, .conteneur1 .desserts .desserts__macaron .entree__escargot__st, .conteneur1 .desserts .desserts__macaron .entree__foie__st, .conteneur1 .desserts .desserts__macaron .entree__oeuf__st, .conteneur1 .desserts .desserts__macaron .plats__filet__st, .conteneur1 .desserts .desserts__macaron .plats__parmentier__st, .conteneur1 .desserts .desserts__macaron .plats__turbot__st, .conteneur1 .desserts .desserts__macaron .desserts__PB__st, .conteneur1 .desserts .desserts__macaron .desserts__macaron__st, .conteneur1 .desserts .desserts__macaron .desserts__mousse__st, .conteneur1 .desserts .desserts__mousse .entree__escargot__st, .conteneur1 .desserts .desserts__mousse .entree__foie__st, .conteneur1 .desserts .desserts__mousse .entree__oeuf__st, .conteneur1 .desserts .desserts__mousse .plats__filet__st, .conteneur1 .desserts .desserts__mousse .plats__parmentier__st, .conteneur1 .desserts .desserts__mousse .plats__turbot__st, .conteneur1 .desserts .desserts__mousse .desserts__PB__st, .conteneur1 .desserts .desserts__mousse .desserts__macaron__st, .conteneur1 .desserts .desserts__mousse .desserts__mousse__st {
+    width: 90%;
+    height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .conteneur1 .entrees .entree__escargot .entree__escargot__st .prix, .conteneur1 .entrees .entree__escargot .entree__foie__st .prix, .conteneur1 .entrees .entree__escargot .entree__oeuf__st .prix, .conteneur1 .entrees .entree__escargot .plats__filet__st .prix, .conteneur1 .entrees .entree__escargot .plats__parmentier__st .prix, .conteneur1 .entrees .entree__escargot .plats__turbot__st .prix, .conteneur1 .entrees .entree__escargot .desserts__PB__st .prix, .conteneur1 .entrees .entree__escargot .desserts__macaron__st .prix, .conteneur1 .entrees .entree__escargot .desserts__mousse__st .prix, .conteneur1 .entrees .entree__foie .entree__escargot__st .prix, .conteneur1 .entrees .entree__foie .entree__foie__st .prix, .conteneur1 .entrees .entree__foie .entree__oeuf__st .prix, .conteneur1 .entrees .entree__foie .plats__filet__st .prix, .conteneur1 .entrees .entree__foie .plats__parmentier__st .prix, .conteneur1 .entrees .entree__foie .plats__turbot__st .prix, .conteneur1 .entrees .entree__foie .desserts__PB__st .prix, .conteneur1 .entrees .entree__foie .desserts__macaron__st .prix, .conteneur1 .entrees .entree__foie .desserts__mousse__st .prix, .conteneur1 .entrees .entree__oeuf .entree__escargot__st .prix, .conteneur1 .entrees .entree__oeuf .entree__foie__st .prix, .conteneur1 .entrees .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .entrees .entree__oeuf .plats__filet__st .prix, .conteneur1 .entrees .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .entrees .entree__oeuf .plats__turbot__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__PB__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .entrees .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .entrees .plats__filet .entree__escargot__st .prix, .conteneur1 .entrees .plats__filet .entree__foie__st .prix, .conteneur1 .entrees .plats__filet .entree__oeuf__st .prix, .conteneur1 .entrees .plats__filet .plats__filet__st .prix, .conteneur1 .entrees .plats__filet .plats__parmentier__st .prix, .conteneur1 .entrees .plats__filet .plats__turbot__st .prix, .conteneur1 .entrees .plats__filet .desserts__PB__st .prix, .conteneur1 .entrees .plats__filet .desserts__macaron__st .prix, .conteneur1 .entrees .plats__filet .desserts__mousse__st .prix, .conteneur1 .entrees .plats__parmentier .entree__escargot__st .prix, .conteneur1 .entrees .plats__parmentier .entree__foie__st .prix, .conteneur1 .entrees .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .entrees .plats__parmentier .plats__filet__st .prix, .conteneur1 .entrees .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .entrees .plats__parmentier .plats__turbot__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__PB__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .entrees .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .entrees .plats__turbot .entree__escargot__st .prix, .conteneur1 .entrees .plats__turbot .entree__foie__st .prix, .conteneur1 .entrees .plats__turbot .entree__oeuf__st .prix, .conteneur1 .entrees .plats__turbot .plats__filet__st .prix, .conteneur1 .entrees .plats__turbot .plats__parmentier__st .prix, .conteneur1 .entrees .plats__turbot .plats__turbot__st .prix, .conteneur1 .entrees .plats__turbot .desserts__PB__st .prix, .conteneur1 .entrees .plats__turbot .desserts__macaron__st .prix, .conteneur1 .entrees .plats__turbot .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__PB .entree__escargot__st .prix, .conteneur1 .entrees .desserts__PB .entree__foie__st .prix, .conteneur1 .entrees .desserts__PB .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__PB .plats__filet__st .prix, .conteneur1 .entrees .desserts__PB .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__PB .plats__turbot__st .prix, .conteneur1 .entrees .desserts__PB .desserts__PB__st .prix, .conteneur1 .entrees .desserts__PB .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__PB .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__macaron .entree__escargot__st .prix, .conteneur1 .entrees .desserts__macaron .entree__foie__st .prix, .conteneur1 .entrees .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__macaron .plats__filet__st .prix, .conteneur1 .entrees .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__macaron .plats__turbot__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__PB__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .entrees .desserts__mousse .entree__escargot__st .prix, .conteneur1 .entrees .desserts__mousse .entree__foie__st .prix, .conteneur1 .entrees .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .entrees .desserts__mousse .plats__filet__st .prix, .conteneur1 .entrees .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .entrees .desserts__mousse .plats__turbot__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__PB__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .entrees .desserts__mousse .desserts__mousse__st .prix, .conteneur1 .plats .entree__escargot .entree__escargot__st .prix, .conteneur1 .plats .entree__escargot .entree__foie__st .prix, .conteneur1 .plats .entree__escargot .entree__oeuf__st .prix, .conteneur1 .plats .entree__escargot .plats__filet__st .prix, .conteneur1 .plats .entree__escargot .plats__parmentier__st .prix, .conteneur1 .plats .entree__escargot .plats__turbot__st .prix, .conteneur1 .plats .entree__escargot .desserts__PB__st .prix, .conteneur1 .plats .entree__escargot .desserts__macaron__st .prix, .conteneur1 .plats .entree__escargot .desserts__mousse__st .prix, .conteneur1 .plats .entree__foie .entree__escargot__st .prix, .conteneur1 .plats .entree__foie .entree__foie__st .prix, .conteneur1 .plats .entree__foie .entree__oeuf__st .prix, .conteneur1 .plats .entree__foie .plats__filet__st .prix, .conteneur1 .plats .entree__foie .plats__parmentier__st .prix, .conteneur1 .plats .entree__foie .plats__turbot__st .prix, .conteneur1 .plats .entree__foie .desserts__PB__st .prix, .conteneur1 .plats .entree__foie .desserts__macaron__st .prix, .conteneur1 .plats .entree__foie .desserts__mousse__st .prix, .conteneur1 .plats .entree__oeuf .entree__escargot__st .prix, .conteneur1 .plats .entree__oeuf .entree__foie__st .prix, .conteneur1 .plats .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .plats .entree__oeuf .plats__filet__st .prix, .conteneur1 .plats .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .plats .entree__oeuf .plats__turbot__st .prix, .conteneur1 .plats .entree__oeuf .desserts__PB__st .prix, .conteneur1 .plats .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .plats .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .plats .plats__filet .entree__escargot__st .prix, .conteneur1 .plats .plats__filet .entree__foie__st .prix, .conteneur1 .plats .plats__filet .entree__oeuf__st .prix, .conteneur1 .plats .plats__filet .plats__filet__st .prix, .conteneur1 .plats .plats__filet .plats__parmentier__st .prix, .conteneur1 .plats .plats__filet .plats__turbot__st .prix, .conteneur1 .plats .plats__filet .desserts__PB__st .prix, .conteneur1 .plats .plats__filet .desserts__macaron__st .prix, .conteneur1 .plats .plats__filet .desserts__mousse__st .prix, .conteneur1 .plats .plats__parmentier .entree__escargot__st .prix, .conteneur1 .plats .plats__parmentier .entree__foie__st .prix, .conteneur1 .plats .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .plats .plats__parmentier .plats__filet__st .prix, .conteneur1 .plats .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .plats .plats__parmentier .plats__turbot__st .prix, .conteneur1 .plats .plats__parmentier .desserts__PB__st .prix, .conteneur1 .plats .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .plats .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .plats .plats__turbot .entree__escargot__st .prix, .conteneur1 .plats .plats__turbot .entree__foie__st .prix, .conteneur1 .plats .plats__turbot .entree__oeuf__st .prix, .conteneur1 .plats .plats__turbot .plats__filet__st .prix, .conteneur1 .plats .plats__turbot .plats__parmentier__st .prix, .conteneur1 .plats .plats__turbot .plats__turbot__st .prix, .conteneur1 .plats .plats__turbot .desserts__PB__st .prix, .conteneur1 .plats .plats__turbot .desserts__macaron__st .prix, .conteneur1 .plats .plats__turbot .desserts__mousse__st .prix, .conteneur1 .plats .desserts__PB .entree__escargot__st .prix, .conteneur1 .plats .desserts__PB .entree__foie__st .prix, .conteneur1 .plats .desserts__PB .entree__oeuf__st .prix, .conteneur1 .plats .desserts__PB .plats__filet__st .prix, .conteneur1 .plats .desserts__PB .plats__parmentier__st .prix, .conteneur1 .plats .desserts__PB .plats__turbot__st .prix, .conteneur1 .plats .desserts__PB .desserts__PB__st .prix, .conteneur1 .plats .desserts__PB .desserts__macaron__st .prix, .conteneur1 .plats .desserts__PB .desserts__mousse__st .prix, .conteneur1 .plats .desserts__macaron .entree__escargot__st .prix, .conteneur1 .plats .desserts__macaron .entree__foie__st .prix, .conteneur1 .plats .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .plats .desserts__macaron .plats__filet__st .prix, .conteneur1 .plats .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .plats .desserts__macaron .plats__turbot__st .prix, .conteneur1 .plats .desserts__macaron .desserts__PB__st .prix, .conteneur1 .plats .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .plats .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .plats .desserts__mousse .entree__escargot__st .prix, .conteneur1 .plats .desserts__mousse .entree__foie__st .prix, .conteneur1 .plats .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .plats .desserts__mousse .plats__filet__st .prix, .conteneur1 .plats .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .plats .desserts__mousse .plats__turbot__st .prix, .conteneur1 .plats .desserts__mousse .desserts__PB__st .prix, .conteneur1 .plats .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .plats .desserts__mousse .desserts__mousse__st .prix, .conteneur1 .desserts .entree__escargot .entree__escargot__st .prix, .conteneur1 .desserts .entree__escargot .entree__foie__st .prix, .conteneur1 .desserts .entree__escargot .entree__oeuf__st .prix, .conteneur1 .desserts .entree__escargot .plats__filet__st .prix, .conteneur1 .desserts .entree__escargot .plats__parmentier__st .prix, .conteneur1 .desserts .entree__escargot .plats__turbot__st .prix, .conteneur1 .desserts .entree__escargot .desserts__PB__st .prix, .conteneur1 .desserts .entree__escargot .desserts__macaron__st .prix, .conteneur1 .desserts .entree__escargot .desserts__mousse__st .prix, .conteneur1 .desserts .entree__foie .entree__escargot__st .prix, .conteneur1 .desserts .entree__foie .entree__foie__st .prix, .conteneur1 .desserts .entree__foie .entree__oeuf__st .prix, .conteneur1 .desserts .entree__foie .plats__filet__st .prix, .conteneur1 .desserts .entree__foie .plats__parmentier__st .prix, .conteneur1 .desserts .entree__foie .plats__turbot__st .prix, .conteneur1 .desserts .entree__foie .desserts__PB__st .prix, .conteneur1 .desserts .entree__foie .desserts__macaron__st .prix, .conteneur1 .desserts .entree__foie .desserts__mousse__st .prix, .conteneur1 .desserts .entree__oeuf .entree__escargot__st .prix, .conteneur1 .desserts .entree__oeuf .entree__foie__st .prix, .conteneur1 .desserts .entree__oeuf .entree__oeuf__st .prix, .conteneur1 .desserts .entree__oeuf .plats__filet__st .prix, .conteneur1 .desserts .entree__oeuf .plats__parmentier__st .prix, .conteneur1 .desserts .entree__oeuf .plats__turbot__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__PB__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__macaron__st .prix, .conteneur1 .desserts .entree__oeuf .desserts__mousse__st .prix, .conteneur1 .desserts .plats__filet .entree__escargot__st .prix, .conteneur1 .desserts .plats__filet .entree__foie__st .prix, .conteneur1 .desserts .plats__filet .entree__oeuf__st .prix, .conteneur1 .desserts .plats__filet .plats__filet__st .prix, .conteneur1 .desserts .plats__filet .plats__parmentier__st .prix, .conteneur1 .desserts .plats__filet .plats__turbot__st .prix, .conteneur1 .desserts .plats__filet .desserts__PB__st .prix, .conteneur1 .desserts .plats__filet .desserts__macaron__st .prix, .conteneur1 .desserts .plats__filet .desserts__mousse__st .prix, .conteneur1 .desserts .plats__parmentier .entree__escargot__st .prix, .conteneur1 .desserts .plats__parmentier .entree__foie__st .prix, .conteneur1 .desserts .plats__parmentier .entree__oeuf__st .prix, .conteneur1 .desserts .plats__parmentier .plats__filet__st .prix, .conteneur1 .desserts .plats__parmentier .plats__parmentier__st .prix, .conteneur1 .desserts .plats__parmentier .plats__turbot__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__PB__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__macaron__st .prix, .conteneur1 .desserts .plats__parmentier .desserts__mousse__st .prix, .conteneur1 .desserts .plats__turbot .entree__escargot__st .prix, .conteneur1 .desserts .plats__turbot .entree__foie__st .prix, .conteneur1 .desserts .plats__turbot .entree__oeuf__st .prix, .conteneur1 .desserts .plats__turbot .plats__filet__st .prix, .conteneur1 .desserts .plats__turbot .plats__parmentier__st .prix, .conteneur1 .desserts .plats__turbot .plats__turbot__st .prix, .conteneur1 .desserts .plats__turbot .desserts__PB__st .prix, .conteneur1 .desserts .plats__turbot .desserts__macaron__st .prix, .conteneur1 .desserts .plats__turbot .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__PB .entree__escargot__st .prix, .conteneur1 .desserts .desserts__PB .entree__foie__st .prix, .conteneur1 .desserts .desserts__PB .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__PB .plats__filet__st .prix, .conteneur1 .desserts .desserts__PB .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__PB .plats__turbot__st .prix, .conteneur1 .desserts .desserts__PB .desserts__PB__st .prix, .conteneur1 .desserts .desserts__PB .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__PB .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__macaron .entree__escargot__st .prix, .conteneur1 .desserts .desserts__macaron .entree__foie__st .prix, .conteneur1 .desserts .desserts__macaron .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__macaron .plats__filet__st .prix, .conteneur1 .desserts .desserts__macaron .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__macaron .plats__turbot__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__PB__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__macaron .desserts__mousse__st .prix, .conteneur1 .desserts .desserts__mousse .entree__escargot__st .prix, .conteneur1 .desserts .desserts__mousse .entree__foie__st .prix, .conteneur1 .desserts .desserts__mousse .entree__oeuf__st .prix, .conteneur1 .desserts .desserts__mousse .plats__filet__st .prix, .conteneur1 .desserts .desserts__mousse .plats__parmentier__st .prix, .conteneur1 .desserts .desserts__mousse .plats__turbot__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__PB__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__macaron__st .prix, .conteneur1 .desserts .desserts__mousse .desserts__mousse__st .prix {
+    font-family: 'roboto_medium';
+    color: #414141;
+  }
+  .conteneur1 .entrees .entree__escargot h3, .conteneur1 .entrees .entree__foie h3, .conteneur1 .entrees .entree__oeuf h3, .conteneur1 .entrees .plats__filet h3, .conteneur1 .entrees .plats__parmentier h3, .conteneur1 .entrees .plats__turbot h3, .conteneur1 .entrees .desserts__PB h3, .conteneur1 .entrees .desserts__macaron h3, .conteneur1 .entrees .desserts__mousse h3, .conteneur1 .plats .entree__escargot h3, .conteneur1 .plats .entree__foie h3, .conteneur1 .plats .entree__oeuf h3, .conteneur1 .plats .plats__filet h3, .conteneur1 .plats .plats__parmentier h3, .conteneur1 .plats .plats__turbot h3, .conteneur1 .plats .desserts__PB h3, .conteneur1 .plats .desserts__macaron h3, .conteneur1 .plats .desserts__mousse h3, .conteneur1 .desserts .entree__escargot h3, .conteneur1 .desserts .entree__foie h3, .conteneur1 .desserts .entree__oeuf h3, .conteneur1 .desserts .plats__filet h3, .conteneur1 .desserts .plats__parmentier h3, .conteneur1 .desserts .plats__turbot h3, .conteneur1 .desserts .desserts__PB h3, .conteneur1 .desserts .desserts__macaron h3, .conteneur1 .desserts .desserts__mousse h3 {
+    font-size: 15px;
+    font-family: 'roboto_thin';
+    line-height: 0;
+  }
+  .conteneur1 .commander {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .conteneur1 .commander .commander__bouton {
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    height: 60px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px #adadad;
+            box-shadow: 5px 5px 15px #adadad;
+    font-family: 'roboto_medium';
+  }
+  footer {
+    height: 170px;
+    background-color: #414141;
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    line-height: 0;
+    position: relative;
+    margin-top: 0px;
+  }
+  footer h3 {
+    font-size: 16px;
+    font-family: 'roboto_light';
+  }
+  footer .footer__img {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  footer .footer__img img {
+    width: 120px;
+    height: 20px;
+  }
+  footer .footer__restaurant__partenaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__restaurant__partenaire .fa-utensils {
+    margin-right: 10px;
+  }
+  footer .footer__restaurant__partenaire .fa-hands-helping {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=style3.css.map */
