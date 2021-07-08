@@ -90,7 +90,7 @@ $background-loc: #e0e0e0;
     }
 
     .reservation{
-        background-color: #f0f0f0;
+        background-color: $background;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -162,6 +162,7 @@ $background-loc: #e0e0e0;
 $vert: #99E2D0;
 $icones: #707070;
 $backhover: #9256dc2a ;
+$background:#f0f0f0;
 $violet: #9356DC; 
 
 .conteneur2{
@@ -239,7 +240,7 @@ $violet: #9356DC;
 }
 
 .conteneur3{
-    background-color: #f0f0f0;
+    background-color: $background;
     height: 1150px;
     display: flex;
     flex-direction: column;
@@ -262,6 +263,7 @@ $violet: #9356DC;
 
     .new{
         position: absolute;
+        font-weight: bold;
         width: 80px;
         height: 30px;
         background-color: $vert;
@@ -452,6 +454,7 @@ footer{
         position: absolute;
         top: 420px;
         left: 50%;
+        right: 50%;
         width: 60px;
         height: 60px;
         border: 8px solid #707070;
@@ -533,7 +536,7 @@ footer{
         }
 
        .reservation{
-            background-color: #f0f0f0;
+            background-color: $background;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -692,7 +695,7 @@ footer{
     }
 
     .conteneur3{
-        background-color: #f0f0f0;
+        background-color: $background;
         height: 820px;
         display: flex;
         flex-wrap: wrap;
@@ -793,6 +796,7 @@ footer{
 
         .new{
             position: absolute;
+            font-weight: bold;
             width: 80px;
             height: 30px;
             background-color: $vert;
@@ -800,6 +804,10 @@ footer{
             margin-top: 15px;
             border-radius: 3px;
             padding: 0px;
+
+            &--modif{
+                left: 643px;
+            }
     
             span{
                 font-family: 'roboto_medium';
@@ -829,7 +837,6 @@ footer{
     }
 }
 
-
 /* Partie responsive desktop */
 @media all and (min-width: 780px){
 
@@ -858,8 +865,8 @@ footer{
             padding-left: 50px;  
 
             img{
-                width: 290px;
-                height: 50px;
+                width: 220px;
+                height: 40px;
             }
         }
 
@@ -1042,6 +1049,7 @@ footer{
                 }
             
                 > div{
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -1055,7 +1063,7 @@ footer{
             
                     .rond{
                         position: relative;
-                        left: -86px;
+                        left: -46%;
                         top: 0px;
                         background-color: $violet;
                         color: white;
@@ -1113,7 +1121,7 @@ footer{
 
     .div__conteneur3__titre__tab{
         width: 100%;
-        background-color: #f0f0f0;
+        background-color: $background;
         margin-bottom: 0px;
 
         .conteneur3__titre__tab{
@@ -1126,7 +1134,7 @@ footer{
     }
 
     .conteneur3{
-        background-color: #f0f0f0;
+        background-color: $background;
         height: 590px;
         display: flex;
         flex-direction: row;
@@ -1146,6 +1154,7 @@ footer{
         }
     
         .resto1{
+            position: relative;
             width: 21%;
             height: 540px;
             min-width: 215px;
@@ -1217,16 +1226,17 @@ footer{
 
         .new{
             position: absolute;
+            font-weight: bold;
             width: 80px;
             height: 30px;
             background-color: $vert;
-            left: 160px;
+            left: 8%;
             margin-top: 15px;
             border-radius: 3px;
             padding: 0px;
 
             &--modif{
-                left: 20%;
+                left: 8%;
             }
 
             span{

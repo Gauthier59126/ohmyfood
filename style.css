@@ -308,6 +308,7 @@ header img {
 
 .conteneur3 .new {
   position: absolute;
+  font-weight: bold;
   width: 80px;
   height: 30px;
   background-color: #99E2D0;
@@ -539,6 +540,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   position: absolute;
   top: 420px;
   left: 50%;
+  right: 50%;
   width: 60px;
   height: 60px;
   border: 8px solid #707070;
@@ -936,6 +938,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur3 .new {
     position: absolute;
+    font-weight: bold;
     width: 80px;
     height: 30px;
     background-color: #99E2D0;
@@ -943,6 +946,9 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     margin-top: 15px;
     border-radius: 3px;
     padding: 0px;
+  }
+  .conteneur3 .new--modif {
+    left: 643px;
   }
   .conteneur3 .new span {
     font-family: 'roboto_medium';
@@ -1002,8 +1008,8 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     padding-left: 50px;
   }
   header .logo__ohmyfood img {
-    width: 290px;
-    height: 50px;
+    width: 220px;
+    height: 40px;
   }
   header .header__ico {
     width: 25%;
@@ -1231,6 +1237,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     margin-right: 20px;
   }
   .conteneur__1__2 .conteneur2 .fonction > div {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1254,7 +1261,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur__1__2 .conteneur2 .fonction > div .rond {
     position: relative;
-    left: -86px;
+    left: -46%;
     top: 0px;
     background-color: #9356DC;
     color: white;
@@ -1342,6 +1349,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     color: black;
   }
   .conteneur3 .resto1 {
+    position: relative;
     width: 21%;
     height: 540px;
     min-width: 215px;
@@ -1419,16 +1427,17 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur3 .new {
     position: absolute;
+    font-weight: bold;
     width: 80px;
     height: 30px;
     background-color: #99E2D0;
-    left: 160px;
+    left: 8%;
     margin-top: 15px;
     border-radius: 3px;
     padding: 0px;
   }
   .conteneur3 .new--modif {
-    left: 20%;
+    left: 8%;
   }
   .conteneur3 .new span {
     font-family: 'roboto_medium';

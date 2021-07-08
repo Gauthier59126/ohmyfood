@@ -75,7 +75,7 @@ header{
 .conteneur1{
     width: 375px;
     height: 940px;
-    background-color: #f0f0f0;
+    background-color: $background;
     position: relative;
     margin: auto;
     top: -60px;
@@ -111,20 +111,19 @@ header{
 
         .coeur1__2{
             position: relative;
-            /*transition: opacity 1s ease-out;*/
             width: 23px;
             
             .far.fa-heart.fa-lg{
                 top: 3px;
                 position: absolute;
-                background-color: #f0f0f0;
+                background-color: $background;
                 height: 21px;
 
                 &.far.fa-heart.fa-lg:hover{
                     opacity: 0;
                     transition: opacity 0.5s;
                     color: black;
-                    background-color: #f0f0f0;
+                    background-color: $background;
                 }
             }
 
@@ -133,6 +132,7 @@ header{
                 color: transparent;
                 height: 21px;
                 width: 21px;
+               
             }
         }
     }
@@ -153,51 +153,62 @@ header{
             font-family: 'roboto_thin' ;
             font-size: 16px;
             border-bottom: 3px solid #99E2D0;
-        }
-
-        @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) ;
         }
 
         .entree__tartare{
-            animation: fadein 0.5s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 200ms both;
         }
 
         .entree__veloute{
-            animation: fadein 1s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 400ms both;
         }
 
         .entree__soupe{
-            animation: fadein 1.5s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 600ms both;               
+        }
+
+        .plats__titre{
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 700ms both;
         }
 
         .plats__s-j{
-            animation: fadein 2s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 800ms both;
         }
 
         .plats__magret{
-            animation: fadein 2.5s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1000ms both;
         }
 
         .plats__pigeon{
-            animation: fadein 3s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1200ms both;
+        }
+
+        .desserts__titre{
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1300ms both;
         }
 
         .desserts__violette{
-            animation: fadein 3.5s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1400ms both;
         }
 
         .desserts__fondant{
-            animation: fadein 4s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1600ms both;
         }
 
         .desserts__millefeuille{
-            animation: fadein 4.5s;
+            animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1800ms both;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity:0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity:1;
+                transform: translateY(0px);
+            }
         }
 
         .entree__tartare, .entree__veloute, .entree__soupe, .plats__s-j, .plats__magret, .plats__pigeon, .desserts__violette, .desserts__fondant, .desserts__millefeuille{
@@ -208,6 +219,41 @@ header{
             flex-direction: column;
             justify-content: center;
             box-shadow: 2px 2px 10px #d8d8d8;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover{
+                .check{
+                    transform: translateX(-50px);
+                    width: 50px;
+                }
+
+                .prix{
+                    transform: translateX(-45px);
+                }
+            }
+
+            .check{
+                background-color: #99E2D0;
+                position: absolute;
+                top: 0;
+                right: -50px;
+                bottom: 0;
+                width: 0px;
+                height: 100%;
+                align-items: center;
+                border-radius: 0 15px 15px 0;
+                transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
+                cursor: pointer;
+
+                .fa-check-circle{
+                    font-size: 20px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 23.5px;
+                }
+            }
 
             .entree__tartare__titre, .entree__veloute__titre, .entree__soupe__titre, .plats__s-j__titre, .plats__magret__titre, .plats__pigeon__titre, .desserts__violette__titre, .desserts__fondant__titre, .desserts__millefeuille__titre {
                 width: 90%;
@@ -225,18 +271,20 @@ header{
                 margin-right: auto;
                 display: flex;
                 justify-content: space-between; 
+                text-overflow: ellipsis;
+
+                h3{
+                    font-size: 14px;
+                    font-family:'roboto_thin' ;
+                    line-height: 0; 
+                } 
 
                 .prix{
                     font-family: 'roboto_medium';
                     color: #414141;
+                    transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
                 }
             }
-
-            h3{
-                font-size: 14px;
-                font-family:'roboto_thin' ;
-                line-height: 0; 
-            }   
         }
     }
 
@@ -355,7 +403,7 @@ footer{
     .conteneur1{
         width: 100%;
         height: 970px;
-        background-color: #f0f0f0;
+        background-color: $background;
         position: relative;
         margin: auto;
         top: 20px;
@@ -601,7 +649,6 @@ $background: #f0f0f0;
 
             .coeur1__2{
                 position: relative;
-                /*transition: opacity 1s ease-out;*/
                 width: 23px;
                 
                 .far.fa-heart.fa-lg{

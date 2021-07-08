@@ -169,69 +169,6 @@ header img {
   border-bottom: 3px solid #99E2D0;
 }
 
-.conteneur1 .entrees .entree__escargot, .conteneur1 .plats .entree__escargot, .conteneur1 .desserts .entree__escargot {
-  -webkit-animation: fadein 0.5s;
-          animation: fadein 0.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.conteneur1 .entrees .entree__foie, .conteneur1 .plats .entree__foie, .conteneur1 .desserts .entree__foie {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
-}
-
-.conteneur1 .entrees .entree__oeuf, .conteneur1 .plats .entree__oeuf, .conteneur1 .desserts .entree__oeuf {
-  -webkit-animation: fadein 1.5s;
-          animation: fadein 1.5s;
-}
-
-.conteneur1 .entrees .plats__filet, .conteneur1 .plats .plats__filet, .conteneur1 .desserts .plats__filet {
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
-}
-
-.conteneur1 .entrees .plats__parmentier, .conteneur1 .plats .plats__parmentier, .conteneur1 .desserts .plats__parmentier {
-  -webkit-animation: fadein 2.5s;
-          animation: fadein 2.5s;
-}
-
-.conteneur1 .entrees .plats__turbot, .conteneur1 .plats .plats__turbot, .conteneur1 .desserts .plats__turbot {
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
-}
-
-.conteneur1 .entrees .desserts__PB, .conteneur1 .plats .desserts__PB, .conteneur1 .desserts .desserts__PB {
-  -webkit-animation: fadein 3.5s;
-          animation: fadein 3.5s;
-}
-
-.conteneur1 .entrees .desserts__macaron, .conteneur1 .plats .desserts__macaron, .conteneur1 .desserts .desserts__macaron {
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
-}
-
-.conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .desserts__mousse {
-  -webkit-animation: fadein 4.5s;
-          animation: fadein 4.5s;
-}
-
 .conteneur1 .entrees .entree__escargot, .conteneur1 .entrees .entree__foie, .conteneur1 .entrees .entree__oeuf, .conteneur1 .entrees .plats__filet, .conteneur1 .entrees .plats__parmentier, .conteneur1 .entrees .plats__turbot, .conteneur1 .entrees .desserts__PB, .conteneur1 .entrees .desserts__macaron, .conteneur1 .entrees .desserts__mousse, .conteneur1 .plats .entree__escargot, .conteneur1 .plats .entree__foie, .conteneur1 .plats .entree__oeuf, .conteneur1 .plats .plats__filet, .conteneur1 .plats .plats__parmentier, .conteneur1 .plats .plats__turbot, .conteneur1 .plats .desserts__PB, .conteneur1 .plats .desserts__macaron, .conteneur1 .plats .desserts__mousse, .conteneur1 .desserts .entree__escargot, .conteneur1 .desserts .entree__foie, .conteneur1 .desserts .entree__oeuf, .conteneur1 .desserts .plats__filet, .conteneur1 .desserts .plats__parmentier, .conteneur1 .desserts .plats__turbot, .conteneur1 .desserts .desserts__PB, .conteneur1 .desserts .desserts__macaron, .conteneur1 .desserts .desserts__mousse {
   height: 65px;
   background-color: white;
