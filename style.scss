@@ -17,20 +17,7 @@ body, #block_page{
     margin: auto;
 }
 
-@font-face {
-    font-family: 'roboto_medium';
-    src: url(fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: 'roboto_light';
-    src: url(fonts/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: 'roboto_thin';
-    src: url(fonts/Roboto-Thin.ttf);
-}
+@import 'abstracts/stylemv.scss';
 
 h1, h2, h3{
     font-family: 'roboto_medium';
@@ -69,9 +56,6 @@ header{
 
 }
 
-
-$background-loc: #e0e0e0;
-
 .conteneur1{
 
     .localisation{
@@ -94,8 +78,8 @@ $background-loc: #e0e0e0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 200px;
-        padding-top: 25px;
+        height: 220px;
+        padding-top: 15px;
         padding-bottom: 30px;
 
         a:visited{
@@ -114,6 +98,8 @@ $background-loc: #e0e0e0;
         .reservation__txt{
             width: 100%;
             margin: auto;
+            margin-top: 0px;
+            margin-bottom: 35px;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -124,11 +110,15 @@ $background-loc: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 15px;
 
-            a{
+            & a{
                 width: 100%;
-                height: 40px;
+                height: 100%;
                 margin-top: -7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
     
                 h3{
                     font-family: 'roboto_light';
@@ -141,14 +131,14 @@ $background-loc: #e0e0e0;
                 color: white;
                 font-size: 15px;
                 width: 60%;
-                height: 50px;
+                height: 55px;
                 background: linear-gradient( 180deg, #FF79DA, #9356DC );
                 border-radius: 50px 50px 50px 50px;
                 text-align: center;
                 margin: auto;
                 border: none;
                 cursor: pointer;
-                box-shadow: 5px 5px 15px #adadad;
+                @include shadow-button;
 
                 &:hover{
                     opacity: 0.8;
@@ -158,12 +148,6 @@ $background-loc: #e0e0e0;
         }
     }       
 }
-
-$vert: #99E2D0;
-$icones: #707070;
-$backhover: #9256dc2a ;
-$background:#f0f0f0;
-$violet: #9356DC; 
 
 .conteneur2{
     width: 100%;
@@ -189,9 +173,9 @@ $violet: #9356DC;
             align-items: center;
             justify-content: flex-start;
             background-color: #f7f7f7;
-            border-radius: 15px 15px 15px 15px;
+            border-radius:  15px;
             height: 60px;
-            box-shadow:  5px 5px 10px #e6e6e6;
+            @include shadow-fonction;
             cursor: pointer;
 
             .rond{
@@ -285,10 +269,6 @@ $violet: #9356DC;
         }
     }
 
-    @mixin shadow {
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-
     .resto1{
         width: 85%;
         margin: auto;
@@ -297,11 +277,7 @@ $violet: #9356DC;
         background-color: white;
         height: 240px;
         border-radius: 20px;
-        @include shadow;
-
-        @mixin border-radius{
-            border-radius: 15px 15px 0px 0px;
-        }
+        @include shadow-resto;
 
         .resto__img{
             width: 100%;
@@ -431,33 +407,40 @@ footer{
 
     #block_page{
         animation: back ;
-        animation-duration: 4.6s;
+        animation-duration: 3.9s;
         opacity: 1;
 
     }
 
     @keyframes back{
         0%{
-            opacity: 0.2;
+            opacity: 0.1;
         }
 
         50% {
-            opacity: 0.2;
+            opacity: 0.1;
         }
 
-        to {
+        75% {
+            opacity: 0.1;
+        }
+
+        100% {
             opacity: 1;
         }
     }
 
     #loader {
-        position: absolute;
+        position: fixed;
         top: 420px;
-        left: 50%;
-        right: 50%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 60px;
         height: 60px;
-        border: 8px solid #707070;
+        border: 8px solid #70707000;
         border-top: 8px solid $vert;
         border-radius: 50%;
         animation: spin 1.5s ease-in-out infinite;
@@ -470,7 +453,11 @@ footer{
         0% { 
             transform: rotate(0deg);
             visibility: visible;
-            opacity: 1;
+
+        }
+
+        50% {
+            border-top-color: $violet;
         }
 
         100% {
@@ -522,6 +509,7 @@ footer{
             .localisation_tab{
                 width: 75%;
                 height: 100%;
+                min-width: 200px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -536,20 +524,12 @@ footer{
         }
 
        .reservation{
-            background-color: $background;
-            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             margin: auto;
             width: 95%;
             height: 140px;
-            padding-top: 25px;
-            padding-bottom: 30px;
             border-radius: 20px;
-       
-            a:visited{
-                color: white;
-            }
 
             br{
                 display: none;
@@ -558,7 +538,6 @@ footer{
             .reservation__titre{
                 width: 87%;
                 height: 20%;
-                display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 font-size: 21px;
@@ -567,7 +546,6 @@ footer{
             .reservation__txt{
                 width: 87%;
                 margin: 0px;
-                display: flex;
                 font-size: 17px;
                 justify-content: start;
             }
@@ -576,104 +554,60 @@ footer{
                 width: 55%;
                 height: 60px;
                 order: 1;
-                display: flex;
                 justify-content: flex-start;
                 margin-top: 20px;
 
                 a{
-                    width: 100%;
-                    height: 40px;
                     padding-top: 0%;
+                    margin-top: -8px;
     
                     h3{
-                      font-family: 'roboto_light'; 
                       margin-top: 23px; 
                       font-size: 17px;
                     }                
                 }
 
                 .reservation__bouton{
-                    color: white;
                     width: 58%;
                     height: 100%;
-                    background: linear-gradient( 180deg, #FF79DA, #9356DC );
                     border-radius: 20px;
                     justify-content: flex-start;
-                    text-align: center;
                     margin: 0px;
-                    border: none;
-                    cursor: pointer;
-                    box-shadow: 2px 2px 15px #adadad;
+                    @include shadow-button;
                 }
             }
         } 
     }
 
     .conteneur2{
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 40px;
     
         .conteneur2__titre{
             font-size: 21px;
-            margin-left: 30px;
-            margin-bottom: 20px;
         }
     
         .fonction{
             width: 100%;
             height: 130px;
-            margin: auto;
-            display: flex;
             flex-direction: row;
             justify-content: space-evenly;
     
             > div{
                 width: 190px;
                 height: 120px;
-                display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: flex-start;
-                background-color: #f7f7f7;
-                border-radius: 15px 15px 15px 15px;
-                box-shadow:  5px 5px 10px #e6e6e6;
-                cursor: pointer;
     
                 .rond{
-                    position: relative;
                     left: -94px;
                     top: 0px;
-                    background-color: $violet;
-                    color: white;
                     border-radius: 50px;
                     height: 25px;
                     width: 25px;
     
                     h4{
-                        font-family: 'roboto_light';
-                        margin: 0px;
-                        width: 100%;
                         height: 25px;
                         font-size: 12px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                     }
-                }
-    
-                &:hover{
-                    background-color: $backhover;
-    
-                     .fa-mobile-alt, .fa-list-ul, .fa-store{
-                        color: $violet;
-                    }
-                }
-    
-                i{
-                    margin-left: 15px;
-                    margin-right: 30px;
-                    padding-top: -10px;
                 }
     
                 .fa-mobile-alt, .fa-list-ul, .fa-store{
@@ -695,13 +629,9 @@ footer{
     }
 
     .conteneur3{
-        background-color: $background;
         height: 820px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: wrap;;
         flex-direction: row;
-        padding-bottom: 50px;
 
         > div{
             width: 98%;
@@ -711,33 +641,9 @@ footer{
             }
         }
     
-        a{
-            width: 100%;
-        }
-    
-        a:visited{
-            color: black;
-        }
-    
-
-    
-        @mixin shadow {
-            box-shadow:  2px 2px 10px #b6b6b6;
-        }
-    
         .resto1{
             width: 41%;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
             height: 340px;
-            border-radius: 20px;
-            @include shadow;
-    
-            @mixin border-radius{
-                border-radius: 15px 15px 0px 0px;
-            }
     
             .resto__img{
                 width: 100%;
@@ -745,80 +651,37 @@ footer{
                 @include border-radius;
     
                 img{
-                    width: 100%;
-                    height: 253px;
-                    @include border-radius;
-                    object-fit: cover;
+                    height: 270px;
                 }
             }
-    
-            .resto__descritpion{
-                width: 90%;
-                height: 30%;
-                margin: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-    
-                .titre-sous-titre{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding-bottom: 5px;
-    
-                    .titre{
-                        line-height: 0;
-                        height: 22px;
-    
-                        & h2{
-                            font-size: 19px; 
-                        }
-                    }
-                    
-                    .sous-titre{
-                        line-height: 0;
-                        height: 22px;
-                        font-family: 'roboto_light';
-    
-                        & h3{
-                            font-size: 18px;
-                            line-height: 0;
-                            font-family: 'roboto_light';
-                        } 
-                    }
 
-                    a{
-                        height: 100%;
+            .resto__descritpion{
+                height: 17%;
+                padding-bottom: 5px;
+
+                .titre{
+    
+                    & h2{
+                        font-size: 19px; 
                     }
+                }
+                .sous-titre{
+        
+                    & h3{
+                        font-size: 18px;
+                    } 
+                }
+    
+                a{
+                    height: 100%;
                 }
             }
         }
 
         .new{
-            position: absolute;
-            font-weight: bold;
-            width: 80px;
-            height: 30px;
-            background-color: $vert;
-            left: 250px;
-            margin-top: 15px;
-            border-radius: 3px;
-            padding: 0px;
 
             &--modif{
                 left: 643px;
-            }
-    
-            span{
-                font-family: 'roboto_medium';
-                margin: 0px;
-                width: 100%;
-                height: 100%;
-                font-size: 14px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #4a8a7a;
             }
         }
     }
@@ -844,7 +707,6 @@ footer{
         width: 100%;
         max-width: 1500px;
         min-width: 1000px;
-        margin: auto;
     }
 
     .conteneur3__titre{
@@ -852,10 +714,10 @@ footer{
     }
 
     header{
-        display: flex;
         width: 95%;
-        height: 85px;
+        height: 75px;
         margin: auto;
+        display: flex;
         align-items: center;
         
         .logo__ohmyfood{
@@ -931,7 +793,6 @@ footer{
                     justify-content: center;
                     align-items: center;
                     background-color: white;
-                    box-shadow:  1px 1px 5px #4d4d4d33;
                     border-radius: 20px;
 
                     .titre__loc{
@@ -950,20 +811,11 @@ footer{
             }
         
             .reservation{
-            background-color: #f7f7f7;
-                display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin: auto;
                 width: 100%;
-                height: 200px;
-                padding-top: 25px;
-                padding-bottom: 30px;
                 border-radius: 20px;
-               
-                a:visited{
-                    color: white;
-                }
         
                 br{
                     display: none;
@@ -972,7 +824,6 @@ footer{
                 .reservation__titre{
                     width: 87%;
                     height: 20%;
-                    display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     font-size: 21px;
@@ -982,7 +833,6 @@ footer{
                     width: 87%;
                     margin: 0px;
                     font-size: 17px;
-                    display: flex;
                     justify-content: flex-start;
                 }
                     
@@ -990,35 +840,26 @@ footer{
                     width: 50%;
                     height: 60px;
                     order: 1;
-                    display: flex;
                     justify-content: flex-start;
                     margin-top: 20px;
         
                     a{
-                        width: 100%;
-                        height: 40px;
                         padding-top: 0%;
             
                         h3{
-                          font-family: 'roboto_light'; 
                           margin-top: 23px; 
                           font-size: 17px;
                         }                
                     }
         
                     .reservation__bouton{
-                        color: white;
                         width: 75%;
                         height: 100%;
                         min-width: 195px;
-                        background: linear-gradient( 180deg, #FF79DA, #9356DC );
                         border-radius: 20px;
                         justify-content: flex-start;
                         text-align: center;
                         margin: 0px;
-                        border: none;
-                        cursor: pointer;
-                        box-shadow: 2px 2px 15px #adadad;
                     }
                 }
             } 
@@ -1031,17 +872,12 @@ footer{
             
             .conteneur2__titre{
                 font-size: 21px;
-                margin-left: 30px;
-                margin-bottom: 20px;
             }
             
             .fonction{
                 width: 90%;
                 height: 100%;
-                margin: auto;
-                display: flex;
                 flex-direction: row;
-                justify-content: space-between;
 
                 .fonction2{
                     margin-left: 20px;
@@ -1050,59 +886,37 @@ footer{
             
                 > div{
                     position: relative;
-                    display: flex;
                     flex-direction: column;
-                    align-items: center;
-                    justify-content: flex-start;
-                    background-color: #f7f7f7;
-                    border-radius: 15px 15px 15px 15px;
                     height: 200px;
-                    box-shadow:  5px 5px 10px #e6e6e6;
-                    cursor: pointer;
                     margin-bottom: 20px;
+
+                    &:hover{
+                        background-color: $backhover;
+        
+                         .fa-mobile-alt, .fa-list-ul, .fa-store{
+                            color: $violet;
+                        }
+                    }
+                    
+                    .fa-mobile-alt, .fa-list-ul, .fa-store{
+                        color: $icones;
+                        font-size: 28px;
+                        margin: 0px;
+                        padding-top: 20px;
+                    }
             
                     .rond{
-                        position: relative;
                         left: -46%;
                         top: 0px;
-                        background-color: $violet;
-                        color: white;
                         border-radius: 50px;
                         height: 25px;
                         width: 25px;
                         max-width: 1035px;
             
                         h4{
-                            font-family: 'roboto_light';
-                            margin: 0px;
-                            width: 100%;
                             height: 25px;
                             font-size: 12px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                         }
-                    }
-            
-                    &:hover{
-                        background-color: $backhover;
-
-                        .fa-mobile-alt, .fa-list-ul, .fa-store{
-                            color: $violet;
-                        }
-                    }
-        
-                    .ico{
-                        width: 90%;
-                        padding-top: 15px;
-                        display: flex;
-                        justify-content: center;
-
-                        .fa-mobile-alt, .fa-list-ul, .fa-store{
-                            color: $icones;
-                            font-size: 30px;
-                            margin: 0px;
-                        } 
                     }
 
                     .fontction__titre{
@@ -1112,6 +926,7 @@ footer{
                             font-size: 17px;
                             width: 99%;
                             text-align: center;
+                            padding-top: 1;
                         } 
                     }
                 }
@@ -1134,88 +949,40 @@ footer{
     }
 
     .conteneur3{
-        background-color: $background;
         height: 590px;
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding: 30px;
-    
-        a{
-            width: 100%;
-        }
-    
-        a:visited{
-            color: black;
-        }
-    
-        @mixin shadow {
-            box-shadow:  2px 2px 10px #b6b6b6;
-        }
     
         .resto1{
             position: relative;
             width: 21%;
             height: 540px;
             min-width: 215px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            border-radius: 20px;
-            @include shadow;
-    
-            @mixin border-radius{
-                border-radius: 15px 15px 0px 0px;
-            }
     
             .resto__img{
-                width: 100%;
                 height: 85%;
-                @include border-radius;
     
                 img{
-                    width: 100%;
                     height: 460px;
-                    @include border-radius;
                     object-fit: cover;
                 }
             }
     
             .resto__descritpion{
-                width: 90%;
                 height: 15%;
-                margin: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
     
                 .titre-sous-titre{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    padding-bottom: 5px;
-    
-                    .titre{
-                        line-height: 0;
-                        height: 22px;
-    
-                        & h2{
-                            font-size: 19px; 
-                        }
+
+                    & h2{
+                        font-size: 19px; 
                     }
                     
-                    .sous-titre{
+                    & h3{
+                        font-size: 18px;
                         line-height: 0;
-                        height: 22px;
                         font-family: 'roboto_light';
-    
-                        & h3{
-                            font-size: 18px;
-                            line-height: 0;
-                            font-family: 'roboto_light';
-                        } 
-                    }
+                    } 
 
                     a{
                         height: 100%;
@@ -1225,34 +992,12 @@ footer{
         }
 
         .new{
-            position: absolute;
-            font-weight: bold;
-            width: 80px;
-            height: 30px;
-            background-color: $vert;
             left: 8%;
-            margin-top: 15px;
-            border-radius: 3px;
-            padding: 0px;
 
             &--modif{
                 left: 8%;
             }
-
-            span{
-                font-family: 'roboto_medium';
-                margin: 0px;
-                width: 100%;
-                height: 100%;
-                font-size: 14px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #4a8a7a;
-            }
         }
-
-
     }
 
     footer{
