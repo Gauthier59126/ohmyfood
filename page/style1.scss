@@ -1,0 +1,373 @@
+
+
+.page{
+    #block_page, body{
+        width: 375px;
+        margin: auto;
+    }
+    
+    h2{
+        font-family: 'roboto_medium';
+    }
+    
+    h3{
+        font-family: 'roboto_thin'
+    }
+    
+    p{
+        font-family: 'roboto_light'; 
+    }
+    
+    a{
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 45px;
+    
+    
+        .fa-arrow-left{
+            margin-left: 30px;
+            margin-right: 70px;
+            color: #414141;
+        }
+    
+        img{
+            width: 160px;
+            height: 30px;
+            padding-top: 5px;
+        }
+    
+    }
+    
+    .background{
+        
+        img{
+            width: 375px;
+            height: 280px;
+            object-fit: cover;
+        }
+    }
+    
+    .conteneur1{
+        width: 375px;
+        height: 940px;
+        background-color: $background;
+        position: relative;
+        margin: auto;
+        top: -60px;
+        border-radius: 35px 35px 0px 0px;
+        padding-bottom: 130px;
+    
+        &--LaNote{
+            height: 1050px;
+        }
+    
+        >a{
+           width: 100%;
+           height: 150px; 
+        }
+    
+        a:visited{
+            color: white;
+        }
+    
+        .titre{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+        }
+    
+        h1{
+            font-family: 'shrikland';
+            font-size: 26px;
+        }
+    
+        .coeurs{
+    
+            .coeur1__2{
+                position: relative;
+                width: 23px;
+                
+                .far.fa-heart.fa-lg{
+                    top: 3px;
+                    position: absolute;
+                    background-color: $background;
+                    height: 21px;
+    
+                    &.far.fa-heart.fa-lg:hover{
+                        opacity: 0;
+                        transition: opacity 0.5s;
+                        color: black;
+                        background-color: $background;
+                    }
+                }
+    
+                .fas.fa-heart.fa-lg.c1{
+                    background-image: url('images/Coeur-plein[928].svg');
+                    color: transparent;
+                    height: 21px;
+                    width: 21px;
+                   
+                }
+            }
+        }
+    
+        .entrees, .plats, .desserts{
+            width: 90%;
+            height: 270px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 20px;
+    
+            &--4{
+                height: 350px;
+                margin-top: 15px;
+            }
+    
+            > h2{
+                width: 12%;
+                height: 22px;
+                margin: 0px;
+                font-family: 'roboto_thin' ;
+                font-size: 16px;
+                border-bottom: 3px solid $vert;
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) ;
+            }
+    
+            .entree__tartare{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 200ms both;
+            }
+    
+            .entree__veloute{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 400ms both;
+            }
+    
+            .entree__soupe{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 600ms both;               
+            }
+    
+            .plats__titre{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 700ms both;
+            }
+    
+            .plats__s-j{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 800ms both;
+            }
+    
+            .plats__magret{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1000ms both;
+            }
+    
+            .plats__pigeon{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1200ms both;
+            }
+    
+            .desserts__titre{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1300ms both;
+            }
+    
+            .desserts__violette{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1400ms both;
+            }
+    
+            .desserts__fondant{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1600ms both;
+            }
+    
+            .desserts__millefeuille{
+                animation: fadein 300ms cubic-bezier(0, 0.5, 0.5, 1) 1800ms both;
+            }
+    
+            .entree__tartare, .entree__veloute, .entree__soupe, .plats__s-j, .plats__magret, .plats__pigeon, .desserts__violette,
+             .desserts__fondant, .desserts__millefeuille{
+                height: 65px;
+                background-color: white;
+                @include border-radius-15px;
+                @include shadow-menu;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+    
+                &:hover{
+                    .ellips{
+                        width: 75%;
+                    }
+
+                    .check{
+                        transform: translateX(-50px);
+                        width: 50px;
+                    }
+    
+                    .prix{
+                        transform: translateX(-45px);
+                    }
+                }
+
+                .ellips{
+                    font-size: 14px;
+                    font-family:'roboto_thin' ;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 90%;
+                    color: black;
+                    transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
+                }
+    
+                .check{
+                    background-color: $vert;
+                    position: absolute;
+                    top: 0;
+                    right: -50px;
+                    bottom: 0;
+                    width: 0px;
+                    height: 100%;
+                    align-items: center;
+                    border-radius: 0 15px 15px 0;
+                    transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
+                    cursor: pointer;
+    
+                    .fa-check-circle{
+                        font-size: 20px;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 23.5px;
+                    }
+                }
+    
+                .entree__tartare__titre, .entree__veloute__titre, .entree__soupe__titre, .plats__s-j__titre, 
+                .plats__magret__titre, .plats__pigeon__titre, .desserts__violette__titre, .desserts__fondant__titre, 
+                .desserts__millefeuille__titre {
+                    width: 90%;
+                    height: 22px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: 'roboto_medium';
+                    font-size: 17px;
+                }
+    
+                .entree__tartare__st, .entree__veloute__st, .entree__soupe__st, .plats__s-j__st, 
+                .plats__magret__st, .plats__pigeon__st, .desserts__violette__st, .desserts__fondant__st, 
+                .desserts__millefeuille__st{
+                    width: 90%;
+                    height: 22px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    justify-content: space-between; 
+                    overflow: hidden;
+    
+                    h3{
+                        font-size: 14px;
+                        font-family:'roboto_thin' ;
+                        line-height: 0; 
+                        display: flex;
+                        justify-content: flex-start;
+                        text-overflow: ellipsis;
+                    } 
+
+
+    
+                    .prix{
+                        font-family: 'roboto_medium';
+                        transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+    
+        .commander{
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 30px;
+    
+            .commander__bouton{
+                color: white;
+                font-size: 15px;
+                width: 50%;
+                height: 50px;
+                background: linear-gradient( 180deg, #FF79DA, #9356DC );
+                @include border-radius-50px;
+                @include shadow-button;
+                text-align: center;
+                margin: auto;
+                border: none;
+                cursor: pointer;
+                font-family: 'roboto_medium';
+    
+                &:hover{
+                    opacity: 0.8;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    
+    footer{
+        height: 170px;
+        background-color: #414141;
+        color: white;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        line-height: 0;
+        position: relative;
+    
+        h3{
+            font-size: 16px;
+            font-family: 'roboto_light';
+        }
+    
+        .footer__img{
+            padding-bottom: 20px;
+            padding-top: 10px;
+    
+            img{
+                width: 120px;
+                height: 20px;
+            }
+        }
+    
+        .footer__restaurant__partenaire{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .fa-utensils{
+                margin-right: 10px;
+            }
+    
+            .fa-hands-helping{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+  

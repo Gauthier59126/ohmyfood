@@ -12,460 +12,7 @@
     }    
 }
 
-body, #block_page{
-    width: 375px;
-    margin: auto;
-}
-
-@import 'abstracts/stylemv.scss';
-
-h1, h2, h3{
-    font-family: 'roboto_medium';
-}
-
-p{
-    font-family: 'roboto_light'; 
-}
-
-a{
-    text-decoration: none;
-    display: block;
-    width: 85%;
-    height: 245px;
-}
-
-.localisation_tab{
-    display: none;
-}
-
-
-
-header{
-    div{
-        width: 375px;
-        height: 65px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    img{
-        width: 160px;
-        height: 30px;
-    }
-
-}
-
-.conteneur1{
-
-    .localisation{
-        width: 100%;
-        height: 55px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $background-loc;
-        box-shadow:  0px 3px 4px inset #b6b6b6;
-
-        i{
-            margin-right: 15px;
-        }
-    }
-
-    .reservation{
-        background-color: $background;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 220px;
-        padding-top: 15px;
-        padding-bottom: 30px;
-
-        a:visited{
-            color: white;
-        }
-        
-        .reservation__titre{
-            width: 90%;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 20px;
-        }
-        
-        .reservation__txt{
-            width: 100%;
-            margin: auto;
-            margin-top: 0px;
-            margin-bottom: 35px;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 16px;
-        }
-        
-        .div__bouton{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 15px;
-
-            & a{
-                width: 100%;
-                height: 100%;
-                margin-top: -7px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-    
-                h3{
-                    font-family: 'roboto_light';
-                    font-size: 16px;
-                    margin-top: 20px;
-                }
-            }
-            
-            .reservation__bouton{
-                color: white;
-                font-size: 15px;
-                width: 60%;
-                height: 55px;
-                background: linear-gradient( 180deg, #FF79DA, #9356DC );
-                border-radius: 50px 50px 50px 50px;
-                text-align: center;
-                margin: auto;
-                border: none;
-                cursor: pointer;
-                @include shadow-button;
-
-                &:hover{
-                    opacity: 0.8;
-                    transition: 0.3s;
-                }
-            }
-        }
-    }       
-}
-
-.conteneur2{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-
-    .conteneur2__titre{
-        font-size: 20px;
-        margin-left: 30px;
-        margin-bottom: 20px;
-    }
-
-    .fonction{
-        width: 85%;
-        height: 220px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        > div{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            background-color: #f7f7f7;
-            border-radius:  15px;
-            height: 60px;
-            @include shadow-fonction;
-            cursor: pointer;
-
-            .rond{
-                position: relative;
-                left: -8px;
-                background-color: $violet;
-                color: white;
-                border-radius: 40px;
-                height: 20px;
-                width: 20px;
-
-                h4{
-                    font-family: 'roboto_light';
-                    margin: 0px;
-                    width: 100%;
-                    height: 100%;
-                    font-size: 11px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
-            &:hover{
-                background-color: $backhover;
-
-                 .fa-mobile-alt, .fa-list-ul, .fa-store{
-                    color: $violet;
-                }
-            }
-
-            i{
-                margin-left: 15px;
-                margin-right: 30px;
-            }
-
-            .fa-mobile-alt, .fa-list-ul, .fa-store{
-                color: $icones;
-            } 
-
-            h3{
-                font-size: 16px;
-            }    
-        }
-    }
-}
-
-.conteneur3{
-    background-color: $background;
-    height: 1150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 50px;
-
-    a{
-        width: 100%;
-    }
-
-    a:visited{
-        color: black;
-    }
-
-    .conteneur3__titre{
-        margin-left: 30px;
-        padding-top: 30px;
-        font-size: 20px;
-    }
-
-    .new{
-        position: absolute;
-        font-weight: bold;
-        width: 80px;
-        height: 30px;
-        background-color: $vert;
-        left: 250px;
-        margin-top: 15px;
-        border-radius: 3px;
-        padding: 0px;
-
-        span{
-            font-family: 'roboto_medium';
-            margin: 0px;
-            width: 100%;
-            height: 100%;
-            font-size: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #4a8a7a;
-        }
-    }
-
-    .resto1{
-        width: 85%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        height: 240px;
-        border-radius: 20px;
-        @include shadow-resto;
-
-        .resto__img{
-            width: 100%;
-            height: 70%;
-            @include border-radius;
-
-            img{
-                width: 100%;
-                height: 170px;
-                @include border-radius;
-                object-fit: cover;
-            }
-        }
-
-        .resto__descritpion{
-            width: 90%;
-            height: 30%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .coeurs{
-                cursor: pointer;
-
-                .coeur1__2{
-                    position: relative;
-                    /*transition: opacity 1s ease-out;*/
-                    width: 23px;
-                    
-                    .far.fa-heart.fa-lg{
-                        top: 3px;
-                        position: absolute;
-                        background-color: white;
-                        height: 21px;
-
-                        &.far.fa-heart.fa-lg:hover{
-                            opacity: 0;
-                            transition: opacity 0.5s;
-                            color: black;
-                            background-color: white;
-                        }
-                    }
-
-                    .fas.fa-heart.fa-lg.c1{
-                        background-image: url('images/Coeur-plein[928].svg');
-                        color: transparent;
-                        height: 21px;
-                        width: 21px;
-                    }
-                }
-            }
-
-            .titre-sous-titre{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-bottom: 5px;
-
-                .titre{
-                    line-height: 0;
-                    height: 22px;
-
-                    & h2{
-                        font-size: 18px; 
-                    }
-                }
-                
-                .sous-titre{
-                    line-height: 0;
-                    height: 22px;
-                    font-family: 'roboto_light';
-
-                    & h3{
-                        font-size: 16px;
-                        line-height: 0;
-                        font-family: 'roboto_light';
-                    } 
-                }
-            }
-        }
-
-    }
-}
-
-footer{
-    height: 170px;
-    background-color: #414141;
-    color: white;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    line-height: 0;
-
-    h3{
-        font-size: 16px;
-        font-family: 'roboto_light';
-    }
-
-    .footer__img{
-        padding-bottom: 20px;
-        padding-top: 10px;
-
-        img{
-            width: 120px;
-            height: 20px;
-        }
-    }
-
-    .footer__restaurant__partenaire{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-        .fa-utensils{
-            margin-right: 10px;
-        }
-
-        .fa-hands-helping{
-            margin-right: 10px;
-        }
-    }
-}
-
-    #block_page{
-        animation: back ;
-        animation-duration: 3.9s;
-        opacity: 1;
-
-    }
-
-    @keyframes back{
-        0%{
-            opacity: 0.1;
-        }
-
-        50% {
-            opacity: 0.1;
-        }
-
-        75% {
-            opacity: 0.1;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    #loader {
-        position: fixed;
-        top: 420px;
-        margin: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 60px;
-        height: 60px;
-        border: 8px solid #70707000;
-        border-top: 8px solid $vert;
-        border-radius: 50%;
-        animation: spin 1.5s ease-in-out infinite;
-        animation-delay: 0.2s;
-        animation-iteration-count: 2;
-        visibility: hidden;
-    }
-  
-    @keyframes spin {
-        0% { 
-            transform: rotate(0deg);
-            visibility: visible;
-
-        }
-
-        50% {
-            border-top-color: $violet;
-        }
-
-        100% {
-             transform: rotate(360deg);
-        }
-    }
-
-
+// responsive tab style
 @media all and (min-width: 376px) and (max-width:779px){
 
     body, #block_page{
@@ -1013,3 +560,177 @@ footer{
         }
     }
 }
+
+
+/* Version responsive tablette style1*/
+@media all and (min-width:376px) and (max-width:779px){
+
+    .page{
+        #block_page, body{
+            width: 780px;
+            margin: auto;
+        }
+    
+        header{
+            height: 60px;
+        }
+        
+        .background{
+    
+            width: 100%;
+            height: 252px;
+            
+            img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        
+        .conteneur1{
+            width: 100%;
+            height: 970px;
+            top: 20px;
+    
+            &--LaNote{
+                height: 1050px;
+            }
+        
+            .titre{
+    
+                h1{
+                    font-size: 27px;
+                }
+            }
+        
+            .entrees, .plats, .desserts{
+        
+                > h2{
+                    width: 40px;
+                    font-size: 17px;
+                }
+        
+                .entree__tartare__titre, .entree__veloute__titre, .entree__soupe__titre, .plats__s-j__titre, 
+                .plats__magret__titre, .plats__pigeon__titre, .desserts__violette__titre, .desserts__fondant__titre, 
+                .desserts__millefeuille__titre {
+    
+                    font-size: 18px;
+    
+                    h3{
+                        font-size: 15px;
+                    }  
+                } 
+            }
+        
+            .commander{
+                padding-top: 50px;
+                padding-bottom: 50px;
+        
+                .commander__bouton{
+                    font-size: 16px;
+                }
+            }
+        }
+    
+        footer{
+            margin-top: 0px;
+        }
+    }
+}
+
+/* Version Responsive Desktop style1 */
+@media all and (min-width:780px){
+
+    .page{
+        #block_page, body{
+            width: 100%;
+            max-width: 1500px;
+            min-width: 1000px;
+        }
+    
+        header{
+            height: 85px;   
+        }
+        
+        .background{
+            width: 100%;
+            height: 252px;
+            
+            img{
+                width: 100%;
+                height: 350px;
+                min-width: 800px;
+                max-width: 1500px;
+            }
+        }
+        
+        .conteneur1{
+            width: 100%;
+            height: 690px;
+            top: 70px;
+        
+            .titre{
+    
+                h1{
+                    font-size: 30px;
+                }
+            }
+    
+            .epd{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 85%;
+                margin: auto;
+                padding: 55px;
+                padding-top: 5px;
+                padding-bottom: 25px;
+                background-color: $background;
+                border-radius: 20px;
+            }
+        
+            .entrees, .plats, .desserts{
+                width: 45%;
+        
+                > h2{
+                    width: 45px;
+                    font-size: 17px;
+                }
+        
+                .entree__tartare, .entree__veloute, .entree__soupe, .plats__s-j, .plats__magret, .plats__pigeon, .desserts__violette, 
+                .desserts__fondant, .desserts__millefeuille{
+                    max-width: 540px;
+                    z-index: 1;
+        
+                    .entree__tartare__titre, .entree__veloute__titre, .entree__soupe__titre, .plats__s-j__titre, 
+                    .plats__magret__titre, .plats__pigeon__titre, .desserts__violette__titre, .desserts__fondant__titre, 
+                    .desserts__millefeuille__titre {
+                        font-size: 18px;
+                    }
+        
+                    h3{
+                        font-size: 15px;
+                    }   
+                }
+            }
+        
+            .commander{
+                width: 45%;
+                margin: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+        
+                .commander__bouton{
+                    font-size: 16px;
+                    width: 60%;
+                    height: 60px;
+                }
+            }
+        }
+    
+        footer{
+            margin-top: 0px;
+        }
+    }
+
+
+}  
