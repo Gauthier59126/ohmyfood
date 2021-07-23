@@ -866,6 +866,12 @@ header img {
   box-shadow: 5px 5px 10px #e6e6e6;
   cursor: pointer;
 }
+.conteneur2 .fonction > div:hover {
+  background-color: #9256dc2a;
+}
+.conteneur2 .fonction > div:hover .fa-mobile-alt, .conteneur2 .fonction > div:hover .fa-list-ul, .conteneur2 .fonction > div:hover .fa-store {
+  color: #9356DC;
+}
 .conteneur2 .fonction > div .rond {
   position: relative;
   left: -8px;
@@ -884,12 +890,6 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.conteneur2 .fonction > div:hover {
-  background-color: #9256dc2a;
-}
-.conteneur2 .fonction > div:hover .fa-mobile-alt, .conteneur2 .fonction > div:hover .fa-list-ul, .conteneur2 .fonction > div:hover .fa-store {
-  color: #9356DC;
 }
 .conteneur2 .fonction > div i {
   margin-left: 15px;
@@ -1648,7 +1648,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   width: 50%;
   height: 50px;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  border-radius: 51px 50px 50px 50px;
+  border-radius: 50px 50px 50px 50px;
   box-shadow: 3px 3px 10px #adadad;
   text-align: center;
   margin: auto;

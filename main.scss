@@ -1,8 +1,11 @@
-@import "./abstracts/_mixins.scss";
-@import "./abstracts/_variables.scss";
-@import "./base/_typographie.scss";
-@import "./component/_mediaQueries";
-@import "./base/keyframes";
 
-@import "./page/style.scss";
-@import "./page/style1.scss";
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
+@import "base/_typographie.scss";
+@import "base/_keyframes.scss";
+
+
+@import "page/style.scss";
+@import "page/style1.scss";
+@import "component/_mediaQueries";
+

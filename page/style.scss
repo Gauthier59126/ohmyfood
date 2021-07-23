@@ -22,8 +22,6 @@ a{
     display: none;
 }
 
-
-
 header{
     div{
         width: 375px;
@@ -162,6 +160,14 @@ header{
             @include shadow-fonction;
             cursor: pointer;
 
+            &:hover{
+                background-color: $backhover;
+
+                 .fa-mobile-alt, .fa-list-ul, .fa-store{
+                    color: $violet;
+                }
+            }
+
             .rond{
                 position: relative;
                 left: -8px;
@@ -180,14 +186,6 @@ header{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                }
-            }
-
-            &:hover{
-                background-color: $backhover;
-
-                 .fa-mobile-alt, .fa-list-ul, .fa-store{
-                    color: $violet;
                 }
             }
 
@@ -389,11 +387,10 @@ footer{
     }
 }
 
-    #block_page{
+    #block_page.bp{
         animation: back ;
         animation-duration: 3.9s;
         opacity: 1;
-
     }
 
     #loader {
