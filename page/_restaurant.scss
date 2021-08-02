@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        height: 45px;
+        height: 60px;
     
     
         .fa-arrow-left{
@@ -224,6 +224,7 @@
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    font-weight: bold;
                     width: 90%;
                     color: black;
                     transition: transform 400ms cubic-bezier(.58,.01,.75,.38);
