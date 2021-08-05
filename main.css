@@ -1633,7 +1633,6 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   body, #block_page {
     width: 100%;
     max-width: 1500px;
-    min-width: 1000px;
   }
   .conteneur3__titre {
     display: none;
@@ -1736,7 +1735,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   .conteneur__1__2 .conteneur1 .div__loc .localisation_tab {
     width: 75%;
     height: 100%;
-    min-width: 200px;
+    min-width: 160px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1818,7 +1817,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   .conteneur__1__2 .conteneur1 .reservation .div__bouton .reservation__bouton {
     width: 75%;
     height: 100%;
-    min-width: 195px;
+    min-width: 160px;
     border-radius: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1918,7 +1917,6 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     position: relative;
     width: 21%;
     height: 540px;
-    min-width: 215px;
   }
   .conteneur3 .resto1 .resto__img {
     height: 85%;
@@ -1930,8 +1928,14 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur3 .resto1 .resto__descritpion {
     height: 15%;
+    white-space: nowrap;
+    overflow: scroll;
   }
-  .conteneur3 .resto1 .resto__descritpion .titre-sous-titre h2 {
+  .conteneur3 .resto1 .resto__descritpion .titre-sous-titre .titre {
+    font-size: 19px;
+    text-overflow: ellipsis;
+  }
+  .conteneur3 .resto1 .resto__descritpion .titre-sous-titre .titre h2 {
     font-size: 19px;
   }
   .conteneur3 .resto1 .resto__descritpion .titre-sous-titre h3 {
@@ -1941,6 +1945,9 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   }
   .conteneur3 .resto1 .resto__descritpion .titre-sous-titre a {
     height: 100%;
+  }
+  .conteneur3 .resto1 .resto__descritpion .coeurs {
+    margin-left: 10px;
   }
   .conteneur3 .new {
     left: 8%;
