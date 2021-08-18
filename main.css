@@ -255,7 +255,7 @@ header img {
 .conteneur1 .reservation .div__bouton .reservation__bouton {
   color: white;
   font-size: 15px;
-  width: 60%;
+  width: 100%;
   height: 55px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -266,6 +266,7 @@ header img {
   cursor: pointer;
   -webkit-box-shadow: 3px 3px 10px #adadad;
           box-shadow: 3px 3px 10px #adadad;
+  font-weight: bold;
 }
 
 .conteneur1 .reservation .div__bouton .reservation__bouton:hover {
@@ -1305,10 +1306,14 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   padding-bottom: 30px;
 }
 
-.page .conteneur1 .commander .commander__bouton {
+.page .conteneur1 .commander .commander__form {
+  width: 180px;
+}
+
+.page .conteneur1 .commander .commander__form .commander__bouton {
   color: white;
   font-size: 15px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -1322,7 +1327,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
   font-family: 'roboto_medium';
 }
 
-.page .conteneur1 .commander .commander__bouton:hover {
+.page .conteneur1 .commander .commander__form .commander__bouton:hover {
   opacity: 0.8;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1517,8 +1522,11 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     margin-top: 23px;
     font-size: 17px;
   }
-  .conteneur1.c1 .reservation .div__bouton .reservation__bouton {
-    width: 58%;
+  .conteneur1.c1 .reservation .div__bouton .reservation__form {
+    height: 60px;
+  }
+  .conteneur1.c1 .reservation .div__bouton .reservation__form .reservation__bouton {
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     -webkit-box-pack: start;
@@ -1816,7 +1824,10 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     margin-top: 23px;
     font-size: 17px;
   }
-  .conteneur__1__2 .conteneur1 .reservation .div__bouton .reservation__bouton {
+  .conteneur__1__2 .conteneur1 .reservation .div__bouton .reservation__form {
+    height: 60px;
+  }
+  .conteneur__1__2 .conteneur1 .reservation .div__bouton .reservation__form .reservation__bouton {
     width: 75%;
     height: 100%;
     min-width: 160px;
@@ -1887,7 +1898,7 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     font-size: 17px;
     width: 99%;
     text-align: center;
-    padding-top: 1;
+    padding-top: 1px;
   }
   .div__conteneur3__titre__tab {
     width: 100%;
@@ -2021,7 +2032,10 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .page .conteneur1 .commander .commander__bouton {
+  .page .conteneur1 .commander .commander__form {
+    width: 280px;
+  }
+  .page .conteneur1 .commander .commander__form .commander__bouton {
     font-size: 16px;
   }
   .page footer {
@@ -2179,9 +2193,12 @@ footer .footer__restaurant__partenaire .fa-hands-helping {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .page .conteneur1 .commander .commander__bouton {
+  .page .conteneur1 .commander .commander__form {
+    width: 280px;
+  }
+  .page .conteneur1 .commander .commander__form .commander__bouton {
     font-size: 16px;
-    width: 60%;
+    width: 100%;
     height: 60px;
   }
   .page footer {
